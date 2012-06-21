@@ -1,0 +1,43 @@
+  * Spielfeld (10 Breit, variable Höhe)
+
+  * Levels (nach 10 reihen lvl up, schnellerer Takt) 
+
+  * Starten in beliebigen lvls(bis 9)
+
+  * 7 Blöcke/Steine(siehe Teris Steine im Download)
+
+  * Stein besteht aus 4 einzel Steinen
+
+  * Gruppen (4 Steine) können gedreht werden, zerfällt am Boden in einzelne Steine
+
+  * Bonussteine?
+
+  * Steine können nach links, rechts und nach unten(schneller) bewegt werden.
+
+  * Verschiedene Steine haben verschiedene Farben
+
+  * Steine drehen/bewegen vom nutzer einstellbar
+
+  * 2 Spielmodi(classic, wilde Steine)
+
+  * Highscore: Punkte für gelöschte reihen, mehr punkte für gleichzeitiges loeschen
+
+  * Highscoreliste mit Schulanbindung(Schul-PC daten)
+
+  * Spielende: Steine ragen aus dem Spielfeld
+
+  * Ton beim drehen der Steine, löschen von reihen (sonder sound bei 4 reihen)
+
+  * Hintergrund musik (einstellbar)
+
+  * Nächster Stein wird angezeigt
+
+  * Taktgeber: mehrmals drehen pro Takt
+
+  * App(Android?)
+
+  * Wechselnder Hintergrund nach lvl
+
+  * Steine Speichern, evtl an/aus option
+
+  * Prokektion des Steins am "boden" evtl. ein/aus
