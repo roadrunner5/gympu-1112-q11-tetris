@@ -65,4 +65,29 @@ public class TetrisController implements ViewZuController {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public void reiheLoeschen(int nummer)
+	{
+		int [][] feld = de.gympu.q11.tetris.model.Spiel.getFeld();//Problem: Das Spiel muss erst erzeugt werden!!! FUNKT NICHT!
+		
+		int i;
+		int z;
+		boolean reiheLoeschen;
+		for(i=0; i<20;i++){
+			
+			for(z=0; z<10; z++){
+				if(feld[i][z] != 0 && reiheLoeschen==false)
+				{
+					reiheLoeschen=true;
+				}
+				else
+				{
+					reiheLoeschen=false;
+				}
+				
+			}
+		}
+		
+	}
+	
 }
