@@ -70,7 +70,7 @@ public class TetrisController implements ViewZuController {
 		
 	}
 	
-	public void reiheLoeschen(int nummer)
+	public void reiheLoeschen()
 	{
 		int[][] feld = model.spielfeldLesen();
 		int i;
@@ -90,6 +90,7 @@ public class TetrisController implements ViewZuController {
 				}
 				
 			}
+			if(reiheLoeschen=true) model.reiheLoeschen(i);
 		}
 		
 	}
