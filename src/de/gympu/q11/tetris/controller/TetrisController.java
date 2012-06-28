@@ -1,6 +1,10 @@
 package de.gympu.q11.tetris.controller;
 
+import de.gympu.q11.tetris.model.TetrisModel;
+
 public class TetrisController implements ViewZuController {
+
+	private TetrisModel model= new de.gympu.q11.tetris.model.TetrisModel();
 	
 	
 	
@@ -68,21 +72,21 @@ public class TetrisController implements ViewZuController {
 	
 	public void reiheLoeschen(int nummer)
 	{
-		int [][] feld = de.gympu.q11.tetris.model.Spiel.getFeld();//Problem: Das Spiel muss erst erzeugt werden!!! FUNKT NICHT!
-		
+		int[][] feld = model.spielfeldLesen();
 		int i;
 		int z;
-		boolean reiheLoeschen;
+		boolean reiheLoeschen = false;
 		for(i=0; i<20;i++){
 			
 			for(z=0; z<10; z++){
-				if(feld[i][z] != 0 && reiheLoeschen==false)
+				if(feld[i][z] != 0)
 				{
 					reiheLoeschen=true;
 				}
 				else
 				{
 					reiheLoeschen=false;
+					break;
 				}
 				
 			}
