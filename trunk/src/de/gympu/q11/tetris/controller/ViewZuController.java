@@ -4,7 +4,8 @@ public interface ViewZuController {
 	public void links();
 	public void rechts();
 	public void unten();
-	public void drehen();
+	public void uhrzeigerSinnDrehen();
+	public void gegenUhrzeigerSinnDrehen();
 	public void pause();
 	public void tonAnAus();
 	public void halten();
