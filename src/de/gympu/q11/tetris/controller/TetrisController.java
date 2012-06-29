@@ -4,94 +4,76 @@ import de.gympu.q11.tetris.model.TetrisModel;
 
 public class TetrisController implements ViewZuController {
 
-	private TetrisModel model= new de.gympu.q11.tetris.model.TetrisModel();
-	
+	private TetrisModel model = new de.gympu.q11.tetris.model.TetrisModel();
+	private TaktGeber takt;
 	
 	
 	public TetrisController() {
-		// TODO Auto-generated constructor stub
+		this.takt = new TaktGeber(this, 1000);
 	}
 	
 	public void links() {
-		
+		model.links();
 	}
 
-	@Override
 	public void rechts() {
-		// TODO Auto-generated method stub
-		
+		// Prüfen ob Bewegung nach rechts möglich
+		// Dann ausführen
+		model.rechts();
 	}
 
-	@Override
 	public void unten() {
-		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void drehen() {
-		// TODO Auto-generated method stub
+	public void uhrzeigerSinnDrehen() {
 		
 	}
+	
+	public void gegenUhrzeigerSinnDrehen() {
+		this.model.steinGegenUhrzeigerSinnDrehen();
+	}
 
-	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
-		
+		if(this.takt.isRunning()) {
+			this.takt.stoppen();
+		} else {
+			this.takt.starten();
+		}
 	}
 
-	@Override
 	public void tonAnAus() {
-		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void halten() {
-		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void absetzen() {
-		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void menue() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void beenden() {
-		// TODO Auto-generated method stub
-		
+		takt.stoppen();
 	}
 	
-	public void reiheLoeschen()
-	{
-		int[][] feld = model.spielfeldLesen();
-		int i;
-		int z;
-		boolean reiheLoeschen = false;
-		for(i=0; i<20;i++){
-			
-			for(z=0; z<10; z++){
-				if(feld[i][z] != 0)
-				{
-					reiheLoeschen=true;
-				}
-				else
-				{
-					reiheLoeschen=false;
-					break;
-				}
-				
-			}
-			if(reiheLoeschen=true) model.reiheLoeschen(i);
-		}
+	public TetrisModel getModel() {
+		return model;
+	}
+
+	public void takt() {
+		// Stein nach unten bewegen
+		model.figurSchrittRunter();
+	}
+
+	public void starten() {
+		takt.starten();
 		
 	}
 	
