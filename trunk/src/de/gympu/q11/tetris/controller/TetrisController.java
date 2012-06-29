@@ -13,13 +13,26 @@ public class TetrisController implements ViewZuController {
 	}
 	
 	public void links() {
-		model.links();
+		int[][] Stein=model.aktuellerStein();
+		int[] SPunkt= model.positionSchwerpunktAktuellerStein();
+		
+		if(SPunkt[0]+Stein[0][0]>=0 && SPunkt[0]+Stein[1][0]>=0 && SPunkt[0]+Stein[2][0]>=0)
+		{
+			model.links();
+		}
+		
 	}
 
 	public void rechts() {
 		// Prüfen ob Bewegung nach rechts möglich
 		// Dann ausführen
-		model.rechts();
+		int[][] Stein=model.aktuellerStein();
+		int[] SPunkt= model.positionSchwerpunktAktuellerStein();
+		
+		if(SPunkt[0]+Stein[0][0]<=9 && SPunkt[0]+Stein[1][0]<=9 && SPunkt[0]+Stein[2][0]<=9)
+		{
+			model.rechts();
+		}
 	}
 
 	public void unten() {
