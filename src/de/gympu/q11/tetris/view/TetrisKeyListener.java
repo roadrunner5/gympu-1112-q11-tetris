@@ -26,12 +26,25 @@ public class TetrisKeyListener implements KeyListener {
 			this.controler.rechts();
 		}
 		
+
+		if(code == KeyEvent.VK_DOWN) {
+			System.out.println("unten");
+			this.controler.unten();
+		}		
+		
+	
+			
 		if(code == KeyEvent.VK_SPACE) {
 			this.controler.gegenUhrzeigerSinnDrehen();
 		}
 		
-		
+		if(code == KeyEvent.VK_P) {
+			System.out.println("pause");
+			this.controler.pause();
+		}	
 	}
+		
+	
 
 	public void keyReleased(KeyEvent arg0) {
 //		System.out.println("keyR");
