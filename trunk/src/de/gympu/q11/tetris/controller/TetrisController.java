@@ -82,7 +82,17 @@ public class TetrisController implements ViewZuController {
 
 	public void takt() {
 		// Stein nach unten bewegen
-		model.figurSchrittRunter();
+		
+		
+		
+		int[][] Stein=model.aktuellerStein();
+		int[] SPunkt= model.positionSchwerpunktAktuellerStein();
+		
+		if(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17)
+		{
+			model.figurSchrittRunter();
+		}
+		else model.figurAufloesen();
 	}
 
 	public void starten() {
