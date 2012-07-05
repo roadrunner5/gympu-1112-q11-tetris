@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pfandautomat()
+comment1.params=f
+comment1.target=Aufgabe5.Flasche\ flascheEingeben(Aufgabe5.Flasche)
+comment1.text=\r\n\ Es\ werden\ nur\ Flaschen\ vom\ Typ\ 1,2\ oder\ 3\ angenommen.\r\n\ @param\ f\ Flasche\r\n\ @return\ null,\ wenn\ Flasche\ angenommen\ wurde.\ f,\ wenn\ Flasche\ nicht\ angenommen\ wurde.\r\n
+comment2.params=
+comment2.target=Aufgabe5.Bon\ getBon()
+numComments=3
