@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=Ampelsteuerung()
-comment0.text=\r\n\ Phasen\:\r\n\ \r\n\ Nr\t\tAmpel1\t\tAmpel2\t\tDauer\r\n\ 1\t\trot\t\t\tgruen\t\t3\r\n\ 2\t\trot\t\t\tgelb\t\t1\r\n\ 3\t\trot\t\t\trot\t\t\t2\r\n\ 4\t\trotgelb\t\trot\t\t\t1\r\n\ 5\t\tgruen\t\trot\t\t\t3\r\n\ 6\t\tgelb\t\trot\t\t\t1\r\n\ 7\t\trot\t\t\trot\t\t\t2\r\n\ 8\t\trot\t\t\trotgelb\t\t1\r\n
-comment1.params=
-comment1.target=void\ takt()
-comment2.params=
-comment2.target=void\ weiterschaltenPruefen()
-numComments=3
