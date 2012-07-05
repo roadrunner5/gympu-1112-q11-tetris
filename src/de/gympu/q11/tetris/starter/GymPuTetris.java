@@ -6,6 +6,9 @@ public class GymPuTetris {
 	
 	private TetrisView view;
 	
+	public static boolean isDebug = false;
+	
+	
 	public GymPuTetris() {
 		view = new TetrisView();
 	}
@@ -14,6 +17,12 @@ public class GymPuTetris {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		if(args.length > 0) {
+			if(args[0].equals("-D")) {
+				isDebug = true;
+			}
+		}
 		new GymPuTetris();
 	}
 
