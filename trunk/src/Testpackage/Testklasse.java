@@ -11,7 +11,7 @@ public class Testklasse extends JFrame {
 		this.setResizable(false);
 		this.setUndecorated(true);
 		
-		Zeichenpanel z = new Zeichenpanel(new File("test.jpg"));
+		Zeichenpanel z = new Zeichenpanel(new File("Neue Bitmap.jpg"));
 		this.getContentPane().add(z);
 		this.setSize(600, 600);
 		this.setLocation(100, 100);

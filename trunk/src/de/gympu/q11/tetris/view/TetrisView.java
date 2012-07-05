@@ -131,7 +131,6 @@ public class TetrisView extends JFrame {
 		this.nextStein.setText(right);		
 	}
 	
-	
 
 
 }
