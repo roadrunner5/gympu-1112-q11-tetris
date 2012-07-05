@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Kasse()
+comment1.params=a
+comment1.target=void\ ArtikelScannen(Artikel)
+comment2.params=gegeben
+comment2.target=double\ zahlen(double)
+numComments=3

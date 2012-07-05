@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=w
+comment0.target=ZAHL(int)
+comment1.params=
+comment1.target=int\ getWert()
+comment2.params=
+comment2.target=ZAHL\ getNachfolger()
+comment3.params=z
+comment3.target=void\ setNachfolger(ZAHL)
+comment4.params=z
+comment4.target=void\ hinzufuegenEnde(ZAHL)
+comment4.text=public\ void\ entferneEnde()\r\n\ \ \ \ {if(nachfolger\ \=\ \ null)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n
+numComments=5

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LISTE()
+comment1.params=z
+comment1.target=void\ hinzufuegenAnfang(ZAHL)
+comment2.params=z
+comment2.target=void\ hinzufuegenEnde(ZAHL)
+comment3.params=
+comment3.target=void\ entferneAnfang()
+comment4.params=
+comment4.target=void\ entferneEnde()
+numComments=5
