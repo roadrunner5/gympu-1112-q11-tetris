@@ -1,6 +1,7 @@
 package de.gympu.q11.tetris.view;
 
 import java.awt.BorderLayout;
+import java.io.File;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -14,7 +15,8 @@ import org.w3c.dom.stylesheets.LinkStyle;
 
 import de.gympu.q11.tetris.controller.TetrisController;
 
-public class TetrisView {
+public class TetrisView extends JFrame {
+	
 	private JFrame fenster;
 	private JTextArea spiel;
 	private JTextArea nextStein;
