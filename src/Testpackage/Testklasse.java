@@ -14,7 +14,7 @@ public class Testklasse extends JFrame {
 		Zeichenpanel z = new Zeichenpanel(new File("test.jpg"));
 		this.getContentPane().add(z);
 		this.setSize(600, 600);
-		this.setLocation(2200, 100);
+		this.setLocation(100, 100);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
