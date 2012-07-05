@@ -39,7 +39,7 @@ public class TetrisController implements ViewZuController {
 	}
 
 	public void unten() {
-		
+		takt();
 	}
 
 	public void uhrzeigerSinnDrehen() {
