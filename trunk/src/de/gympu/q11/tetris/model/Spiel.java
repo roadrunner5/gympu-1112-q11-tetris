@@ -2,6 +2,9 @@ package de.gympu.q11.tetris.model;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
+import de.gympu.q11.tetris.starter.GymPuTetris;
 import de.gympu.q11.tetris.view.TetrisView;
 
 public class Spiel {
@@ -75,14 +78,35 @@ public class Spiel {
 	}
 	
 	private Block randNextBlock() {
-		char[] types = new char[] {
-				'I','J','L','O','S','T','Z'
-		};
-		
-		Random r = new Random();
-		int index = r.nextInt(types.length);
-		
-		return new Block(feld.getFeld()[0].length / 2, 0, types[index]);
+		if(GymPuTetris.isDebug) {
+			String[] types = new String[] {
+					"I","J","L","O","S","T","Z"
+			};
+			
+			Object block = JOptionPane.showInputDialog(null,
+                    "Nächsten Stein auswählen",
+                    "Nächster Stein",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    types,
+                    "I");
+			
+			String b = (String) block;
+			
+			return new Block(feld.getFeld()[0].length / 2, 0, b.charAt(0));
+			
+                            
+		}
+		else {
+			char[] types = new char[] {
+					'I','J','L','O','S','T','Z'
+			};
+			
+			Random r = new Random();
+			int index = r.nextInt(types.length);
+			
+			return new Block(feld.getFeld()[0].length / 2, 0, types[index]);
+		}
 	}
 
 	public void setView(TetrisView view) {
