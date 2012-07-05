@@ -14,13 +14,13 @@ public class Zeichenpanel extends JPanel {
 	public Zeichenpanel(File f) {
 		datei = f;
 	}
-	
+
 	
 	public void paint(Graphics g) {
 		Image img;
 		try {
 			img = ImageIO.read(datei);
-			g.drawImage(img, 50, 50, null);
+			g.drawImage(img, 50,50, null);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

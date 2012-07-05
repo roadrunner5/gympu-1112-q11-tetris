@@ -25,6 +25,7 @@ public class Testklasse extends JFrame {
 			z.repaint(50, 50, 50, 50);
 			
 			
+			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

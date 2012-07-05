@@ -30,11 +30,11 @@ public class TetrisView  {
 
                 
                 fenster = new JFrame();
-                fenster.setSize(200, 600);
+                fenster.setSize(300, 600);
                 fenster.setResizable(false);
-                // fenster.setLocation(2500, 100);
+                fenster.setLocation(200, 50);
                 
-                daten = new int[20][10];
+                daten = new int[20][8];
                 
                 
                 spiel = new JTextArea(18, 11);
