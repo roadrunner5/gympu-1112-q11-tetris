@@ -67,7 +67,14 @@ public class TetrisController implements ViewZuController {
 	}
 
 	public void absetzen() {
-		
+		int[][] Stein=model.aktuellerStein();
+		int[] SPunkt= model.positionSchwerpunktAktuellerStein();
+		int[][] feld= model.spielfeldLesen();
+		while(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
+		{
+			model.figurSchrittRunter();
+		}
+		model.figurAufloesen();
 	}
 
 	public void menue() {
