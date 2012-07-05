@@ -25,6 +25,6 @@ public class Zeichenpanel extends JPanel {
 			e.printStackTrace();
 		}
 		
-	}
+	}}
 
-}
+

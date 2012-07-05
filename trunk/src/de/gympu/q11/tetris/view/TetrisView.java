@@ -13,6 +13,8 @@ import javax.swing.JTextField;
 
 import org.w3c.dom.stylesheets.LinkStyle;
 
+import Testpackage.Zeichenpanel;
+
 import de.gympu.q11.tetris.controller.TetrisController;
 
 public class TetrisView  {
@@ -68,6 +70,9 @@ public class TetrisView  {
                 this.controller.getModel().setView(this);       // Dem Model die View mitteilen
                 this.controller.starten();
                 
+                Musik m = new Musik();
+                m.play();
+               
         }
         
         
@@ -134,3 +139,4 @@ public class TetrisView  {
 
 
 }
+
