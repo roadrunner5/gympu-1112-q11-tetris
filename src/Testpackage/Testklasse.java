@@ -24,7 +24,7 @@ public class Testklasse extends JFrame {
 		this.setResizable(false);
 		this.setUndecorated(true);
 
-		Zeichenpanel z = new Zeichenpanel(new File("Neue Bitmap.jpg"));
+		Zeichenpanel z = new Zeichenpanel(new File("Tetris.jpg"));
 	
 		this.getContentPane().add(z);
 		this.setSize(600, 600);

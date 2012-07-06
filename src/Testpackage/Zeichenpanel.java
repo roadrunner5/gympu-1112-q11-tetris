@@ -20,7 +20,7 @@ public class Zeichenpanel extends JPanel {
 		Image img;
 		try {
 			img = ImageIO.read(datei);
-			g.drawImage(img, 50,50, null);
+			g.drawImage(img, 0,0, null);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
