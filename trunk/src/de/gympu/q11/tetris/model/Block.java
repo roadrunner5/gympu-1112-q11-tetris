@@ -108,10 +108,9 @@ public class Block {
 	
 
     public void drehenUhrzeigersinn() {
-   
-    	if 
-
-        if (typ == 'S');{
+    	
+        if (typ == 'S')
+    	{
 
         	if (zaehler == 0) {
 
