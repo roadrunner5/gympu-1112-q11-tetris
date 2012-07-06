@@ -27,7 +27,7 @@ public class Testklasse extends JFrame {
 		Zeichenpanel z = new Zeichenpanel(new File("Tetris.jpg"));
 	
 		this.getContentPane().add(z);
-		this.setSize(600, 600);
+		this.setSize(800, 700);
 		this.setLocation(100, 100);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -38,17 +38,17 @@ public class Testklasse extends JFrame {
 
 
 		{
-		try {
-			Thread.sleep(2000);
-			z.datei = new File("test2.jpg");
-			z.repaint(300, 50, 50, 50);
+		//try {
+		//	Thread.sleep(2000);
+		//	z.datei = new File("test2.jpg");
+		//	z.repaint(300, 50, 50, 50);
 			
 			
 			
-		} catch (InterruptedException e) {
+		//} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		//	e.printStackTrace();
+		//}
 
 		}}
 		
