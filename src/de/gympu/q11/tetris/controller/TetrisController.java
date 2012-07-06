@@ -6,6 +6,7 @@ public class TetrisController implements ViewZuController {
 
 	private TetrisModel model = new de.gympu.q11.tetris.model.TetrisModel();
 	private TaktGeber takt;
+	private boolean aufgeloest;
 	
 	
 	public TetrisController() {
@@ -47,7 +48,8 @@ public class TetrisController implements ViewZuController {
 	}
 	
 	public void gegenUhrzeigerSinnDrehen() {
-		this.model.steinGegenUhrzeigerSinnDrehen();
+		//steinGegenUhrzeigerSinnDrehen
+		this.model.steinImUhrzeigerSinnDrehen();
 	}
 
 	public void pause() {
@@ -72,9 +74,11 @@ public class TetrisController implements ViewZuController {
 		int[][] feld= model.spielfeldLesen();
 		while(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
 		{
-			model.figurSchrittRunter();
+			if(aufgeloest==false) takt();
+			else break;
+			
 		}
-		model.figurAufloesen();
+		
 	}
 
 	public void menue() {
@@ -104,8 +108,14 @@ public class TetrisController implements ViewZuController {
 		if(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
 		{
 			model.figurSchrittRunter();
+			aufgeloest=false;
 		}
-		else model.figurAufloesen();
+		else 
+		{
+			aufgeloest=true;
+			model.figurAufloesen();
+			
+		}
 	}
 
 	public void starten() {
