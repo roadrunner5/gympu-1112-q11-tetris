@@ -44,7 +44,6 @@ public class TetrisController implements ViewZuController {
 	}
 
 	public void uhrzeigerSinnDrehen() {
-		
 	}
 	
 	public void gegenUhrzeigerSinnDrehen() {
