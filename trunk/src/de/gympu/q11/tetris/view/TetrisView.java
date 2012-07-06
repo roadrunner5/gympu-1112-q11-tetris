@@ -32,7 +32,7 @@ public class TetrisView  {
 
                 
                 fenster = new JFrame();
-                fenster.setSize(300, 600);
+                fenster.setSize(800, 700);
                 fenster.setResizable(false);
                 fenster.setLocation(200, 50);
                 
