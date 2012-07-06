@@ -16,8 +16,7 @@ public class Musik {
     
     public Musik() {
         try {
-            //AudioInputStream ais = AudioSystem.getAudioInputStream(getClass().getResource("alarm.wav"));
-            //AudioInputStream ais = AudioSystem.getAudioInputStream(new File("C:\\windows\\media\\chimes.wav"));
+           
             AudioInputStream ais = AudioSystem.getAudioInputStream(new File("Tetris.wav"));
             AudioFormat format = ais.getFormat();
             DataLine.Info info = new DataLine.Info(Clip.class, format, ((int) ais.getFrameLength() * format.getFrameSize()));
