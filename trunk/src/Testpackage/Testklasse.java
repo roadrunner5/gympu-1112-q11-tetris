@@ -41,19 +41,26 @@ public class Testklasse extends JFrame {
 
 
 		{
-		//try {
-		//	Thread.sleep(2000);
-		//	z.datei = new File("test2.jpg");
-		//	z.repaint(300, 50, 50, 50);
+		try {
+			Thread.sleep(2000);
+			z.datei = new File("Stein Rot.jpg");
+			z.repaint(0, 0, 50, 50);
 
 			
 			
 			
+<<<<<<< .mine
+		} catch (InterruptedException e) {
+			 //TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+=======
 		//} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 
 		//	e.printStackTrace();
 		//}
+>>>>>>> .r42
 
 		
 		}}
