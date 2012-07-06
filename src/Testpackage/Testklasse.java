@@ -24,7 +24,9 @@ public class Testklasse extends JFrame {
 		this.setResizable(false);
 		this.setUndecorated(true);
 
+
 		Zeichenpanel z = new Zeichenpanel(new File("Tetris.jpg"));
+
 	
 		this.getContentPane().add(z);
 		this.setSize(800, 700);
@@ -37,22 +39,24 @@ public class Testklasse extends JFrame {
         
 
 
+
 		{
 		//try {
 		//	Thread.sleep(2000);
 		//	z.datei = new File("test2.jpg");
 		//	z.repaint(300, 50, 50, 50);
+
 			
 			
 			
 		//} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
+
 		//	e.printStackTrace();
 		//}
 
-		}}
 		
-
+		}}
 		
 		
 		
