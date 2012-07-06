@@ -48,21 +48,10 @@ public class Testklasse extends JFrame {
 
 			
 			
-			
-<<<<<<< .mine
 		} catch (InterruptedException e) {
 			 //TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-=======
-		//} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-
-		//	e.printStackTrace();
-		//}
->>>>>>> .r42
-
-		
 		}}
 		
 		
