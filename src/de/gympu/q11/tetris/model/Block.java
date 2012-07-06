@@ -5,12 +5,14 @@ public class Block {
 	private int yS;
 	private char typ;
 	private int[][] steine;
+	private int zaehler;
 	
 	public Block(int schwerPunktX, int schwerPunktY, char art) {
 		xS = schwerPunktX;
 		yS = schwerPunktY;
 		typ = art;
 		steine = new int[3][2];
+		zaehler = 0;
 		
 		// Steine Array auffüllen
 		// je nach Typ
@@ -21,46 +23,46 @@ public class Block {
 			 * XSX
 			 */
 			case 'T':
-				steine[0][0] = 0;	// x
-				steine[0][1] = -1;	// y
+				steine[0][0] = -1;	// x
+				steine[0][1] = 0;	// y
 				
-				steine[1][0] = 1;
-				steine[1][1] = 0;
+				steine[1][0] = 0;
+				steine[1][1] = -1;
 				
-				steine[2][0] = -1;
+				steine[2][0] = 1;
 				steine[2][1] = 0;
 			break;
 
 			case 'I':
-				steine[0][0] = 0;	// x
-				steine[0][1] = -1;	// y
+				steine[0][0] = 1;	// x
+				steine[0][1] = 0;	// y
 				
-				steine[1][0] = 0;
-				steine[1][1] = 1;
+				steine[1][0] = -1;
+				steine[1][1] = 0;
 				
-				steine[2][0] = 0;
-				steine[2][1] = 2;
+				steine[2][0] = -2;
+				steine[2][1] = 0;
 			break;
 			
 			case 'L':
-				steine[0][0] = -1;	// x
-				steine[0][1] = 0;	// y
-				
-				steine[1][0] = 1;
-				steine[1][1] = 0;
-				
-				steine[2][0] = 1;
-				steine[2][1] = -1;
-			break;
-			
-			case 'J':
-				steine[0][0] = -1;	// x
+				steine[0][0] = 0;	// x
 				steine[0][1] = -1;	// y
 				
 				steine[1][0] = -1;
 				steine[1][1] = 0;
 				
-				steine[2][0] = 1;
+				steine[2][0] = -2;
+				steine[2][1] = 0;
+			break;
+			
+			case 'J':
+				steine[0][0] = 0;	// x
+				steine[0][1] = -1;	// y
+				
+				steine[1][0] = 1;
+				steine[1][1] = 0;
+				
+				steine[2][0] = 2;
 				steine[2][1] = 0;
 			break;
 			
@@ -76,25 +78,25 @@ public class Block {
 			break;
 			
 			case 'Z':
-				steine[0][0] = 1;	// x // 1
+				steine[0][0] = -1;	// x // 1
 				steine[0][1] = 0;	// y
 				
 				steine[1][0] = 0;	// 2
-				steine[1][1] = -1;
+				steine[1][1] = 1;
 				
-				steine[2][0] = -1;	// 3
-				steine[2][1] = -1;
+				steine[2][0] = 1;	// 3
+				steine[2][1] = 1;
 			break;
 			
 			case 'S':
-				steine[0][0] = 0;	// x
-				steine[0][1] = -1;	// y
+				steine[0][0] = 1;	// x
+				steine[0][1] = 0;	// y
 				
-				steine[1][0] = -1;
-				steine[1][1] = 0;
+				steine[1][0] = 0;
+				steine[1][1] = 1;
 				
-				steine[2][0] = 1;
-				steine[2][1] = -1;
+				steine[2][0] = -1;
+				steine[2][1] = 1;
 			break;
 			
 			default:
@@ -104,24 +106,46 @@ public class Block {
 	}
 	
 	
-	public void drehenUhrzeigersinn() {
-		if (typ == 'S') {
-			System.out.println("DREHEUNG!");
-			
-			steine[0][0] = -1;	// 1
-			steine[0][1] = 0;
-			
-			steine[1][0] = 0;	// 2
-			steine[1][1] = 1;
-			
-			steine[2][0] = -1;	// 3
-			steine[2][1] = 1;
-			
-		
-}
-	}
+
+    public void drehenUhrzeigersinn() {
+   
+    	if 
+
+        if (typ == 'S');{
+
+        	if (zaehler == 0) {
+
+            	  	steine[0][0] = 0;
+            	  	steine[0][1] = -1;
+
+        	  		steine[1][0] = 1;
+        	  		steine[1][1] = 0;
+
+        	  		steine[2][0] = 1;
+        	  		steine[2][1] = 1;
+
+        	  		zaehler = 1;
+        	  		
+
+              	}
+        	else if (zaehler == 1) {
+              		
+              		steine[0][0] = 1;
+    				steine[0][1] = 0;	
+    				
+    				steine[1][0] = 0;
+    				steine[1][1] = 1;
+    				
+    				steine[2][0] = -1;
+    				steine[2][1] = 1;
+
+                    zaehler = 0;
+                  }
+           }
+        
+    }
 	
-	public void drehenGegenUhrzeigersinn() {
+	/*public void drehenGegenUhrzeigersinn() {
 		if(typ != 'O') {	// Ein O braucht man nicht drehen
 			for(int i = 0; i < steine.length; i++) {
 				int save = steine[i][0];
@@ -129,7 +153,7 @@ public class Block {
 				steine[i][1] = -save;		// Vorzeichen tauschen beim Drehen im Uhrzeigersinn
 			}
 		}
-	}
+	} */
 	
 	public void links() {
 		xS--;
