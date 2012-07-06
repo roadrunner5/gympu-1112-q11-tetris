@@ -122,4 +122,11 @@ public class TetrisController implements ViewZuController {
 		
 	}
 	
+	public boolean aufgeloest()
+	{
+		return aufgeloest;
+	}
+	
+	
+	
 }
