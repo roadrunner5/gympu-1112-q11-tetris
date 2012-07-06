@@ -75,26 +75,26 @@ public class Block {
 				steine[2][1] = 1;
 			break;
 			
-			case 'S':
-				steine[0][0] = 1;	// x
+			case 'Z':
+				steine[0][0] = 1;	// x // 1
 				steine[0][1] = 0;	// y
 				
-				steine[1][0] = 0;
+				steine[1][0] = 0;	// 2
 				steine[1][1] = -1;
 				
-				steine[2][0] = -1;
+				steine[2][0] = -1;	// 3
 				steine[2][1] = -1;
 			break;
 			
-			case 'Z':
-				steine[0][0] = -1;	// x
-				steine[0][1] = 0;	// y
+			case 'S':
+				steine[0][0] = 0;	// x
+				steine[0][1] = -1;	// y
 				
-				steine[1][0] = 0;
-				steine[1][1] = -1;
+				steine[1][0] = -1;
+				steine[1][1] = 0;
 				
-				steine[2][0] = -1;
-				steine[2][1] = 1;
+				steine[2][0] = 1;
+				steine[2][1] = -1;
 			break;
 			
 			default:
@@ -105,13 +105,20 @@ public class Block {
 	
 	
 	public void drehenUhrzeigersinn() {
-		if(typ != 'O') {	// Ein O braucht man nicht drehen
-			for(int i = 0; i < steine.length; i++) {
-				int save = steine[i][0];
-				steine[i][0] = steine[i][1];
-				steine[i][1] = save;		// Vorzeichen nicht tauschen beim Drehen im Uhrzeigersinn
-			}
-		}
+		if (typ == 'S') {
+			System.out.println("DREHEUNG!");
+			
+			steine[0][0] = -1;	// 1
+			steine[0][1] = 0;
+			
+			steine[1][0] = 0;	// 2
+			steine[1][1] = 1;
+			
+			steine[2][0] = -1;	// 3
+			steine[2][1] = 1;
+			
+		
+}
 	}
 	
 	public void drehenGegenUhrzeigersinn() {
