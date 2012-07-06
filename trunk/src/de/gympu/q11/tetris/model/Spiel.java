@@ -50,7 +50,6 @@ public class Spiel {
 	
 	public void aktuellenSteinAufloesen() {
 		// Aktuellen Stein im Spielfeld verankern.
-//		System.exit(1);
 		
 		int[] schwerPunktReihe = feld.getReihe(aktuellerBlock.getSchwerpunkt()[1]);
 		schwerPunktReihe[aktuellerBlock.getSchwerpunkt()[0]] = aktuellerBlock.getTypInt();
