@@ -14,7 +14,7 @@ public class Block {
 		steine = new int[3][2];
 		zaehler = 0;
 		
-		// Steine Array auff�llen
+		// Steine Array auffüllen
 		// je nach Typ
 		
 		switch(art) {
@@ -108,51 +108,271 @@ public class Block {
 	
 
     public void drehenUhrzeigersinn() {
-    	
+        
         if (typ == 'S')
-    	{
+        {
 
-        	if (zaehler == 0) {
+            if (zaehler == 0) {
 
-            	  	steine[0][0] = 0;
-            	  	steine[0][1] = -1;
+                      steine[0][0] = 0;
+                      steine[0][1] = -1;
 
-        	  		steine[1][0] = 1;
-        	  		steine[1][1] = 0;
+                      steine[1][0] = 1;
+                      steine[1][1] = 0;
 
-        	  		steine[2][0] = 1;
-        	  		steine[2][1] = 1;
+                      steine[2][0] = 1;
+                      steine[2][1] = 1;
 
-        	  		zaehler = 1;
-        	  		
-
-              	}
-        	else if (zaehler == 1) {
-              		
-              		steine[0][0] = 1;
-    				steine[0][1] = 0;	
-    				
-    				steine[1][0] = 0;
-    				steine[1][1] = 1;
-    				
-    				steine[2][0] = -1;
-    				steine[2][1] = 1;
+                      zaehler = 1;
+                  }
+            else if (zaehler == 1) {
+                     
+                      steine[0][0] = 1;
+                    steine[0][1] = 0;   
+                   
+                    steine[1][0] = 0;
+                    steine[1][1] = 1;
+                   
+                    steine[2][0] = -1;
+                    steine[2][1] = 1;
 
                     zaehler = 0;
                   }
            }
+       
+        if (typ == 'Z')
+        {
+
+            if (zaehler == 0) {
+
+                      steine[0][0] = 0;
+                      steine[0][1] = -1;
+
+                      steine[1][0] = -1;
+                      steine[1][1] = 0;
+
+                      steine[2][0] = -1;
+                      steine[2][1] = 1;
+
+                      zaehler = 1;
+                  }
+            else if (zaehler == 1) {
+                     
+                      steine[0][0] = -1;
+                    steine[0][1] = 0;   
+                   
+                    steine[1][0] = 0;
+                    steine[1][1] = 1;
+                   
+                    steine[2][0] = 1;
+                    steine[2][1] = 1;
+
+                    zaehler = 0;
+                  }
+           }
+       
+        if (typ == 'I')
+        {
+
+            if (zaehler == 0) {
+
+                      steine[0][0] = 0;
+                      steine[0][1] = 1;
+
+                      steine[1][0] = 0;
+                      steine[1][1] = -1;
+
+                      steine[2][0] = 0;
+                      steine[2][1] = -2;
+
+                      zaehler = 1;
+                  }
+            else if (zaehler == 1) {
+                     
+                      steine[0][0] = 1;
+                      steine[0][1] = 0;   
+                   
+                      steine[1][0] = -1;
+                      steine[1][1] = 0;
+                   
+                      steine[2][0] = -2;
+                      steine[2][1] = 0;
+
+                      zaehler = 0;
+                  }
+           }
+       
+        if (typ == 'L')
+        {
+
+            if (zaehler == 0) {
+
+            		steine[0][0] = 1;
+            		steine[0][1] = 0;
+
+            		steine[1][0] = 0;
+            		steine[1][1] = -1;
+
+            		steine[2][0] = 0;
+            		steine[2][1] = -2;
+
+            		zaehler = 1;
+                  }
+            else if (zaehler == 1) {
+                     
+            		steine[0][0] = 0;
+                    steine[0][1] = 1;   
+                   
+                    steine[1][0] = 1;
+                    steine[1][1] = 0;
+                   
+                    steine[2][0] = 2;
+                    steine[2][1] = 0;
+
+                    zaehler = 2;
+                  }
+            else if (zaehler == 2) {
+                 
+                    steine[0][0] = -1;
+                    steine[0][1] = 0;   
+               
+                    steine[1][0] = 0;
+                    steine[1][1] = 1;
+               
+                    steine[2][0] = 0;
+                    steine[2][1] = 2;
+
+                    zaehler = 3;
+              }
+            else if (zaehler == 3) {
+                 
+            		steine[0][0] = 0;
+            		steine[0][1] = -1;   
+               
+            		steine[1][0] = -1;
+            		steine[1][1] = 0;
+   
+            		steine[2][0] = -2;
+            		steine[2][1] = 0;
+
+            		zaehler = 0;
+              }
+           }
         
-    }
-	
-	/*public void drehenGegenUhrzeigersinn() {
-		if(typ != 'O') {	// Ein O braucht man nicht drehen
-			for(int i = 0; i < steine.length; i++) {
-				int save = steine[i][0];
-				steine[i][0] = steine[i][1];
-				steine[i][1] = -save;		// Vorzeichen tauschen beim Drehen im Uhrzeigersinn
-			}
-		}
-	} */
+        if (typ == 'J')
+        {
+
+            if (zaehler == 0) {
+
+            		steine[0][0] = 1;
+            		steine[0][1] = 0;
+
+            		steine[1][0] = 0;
+            		steine[1][1] = 1;
+
+            		steine[2][0] = 0;
+            		steine[2][1] = 2;
+
+            		zaehler = 1;
+                  }
+            else if (zaehler == 1) {
+                     
+            		steine[0][0] = 0;
+                    steine[0][1] = 1;   
+                   
+                    steine[1][0] = -1;
+                    steine[1][1] = 0;
+                   
+                    steine[2][0] = -2;
+                    steine[2][1] = 0;
+
+                    zaehler = 2;
+                  }
+            else if (zaehler == 2) {
+                 
+                    steine[0][0] = -1;
+                    steine[0][1] = 0;   
+               
+                    steine[1][0] = 0;
+                    steine[1][1] = -1;
+               
+                    steine[2][0] = 0;
+                    steine[2][1] = -2;
+
+                    zaehler = 3;
+              }
+            else if (zaehler == 3) {
+                 
+            		steine[0][0] = 0;
+            		steine[0][1] = -1;   
+               
+            		steine[1][0] = 1;
+            		steine[1][1] = 0;
+   
+            		steine[2][0] = 2;
+            		steine[2][1] = 0;
+
+            		zaehler = 0;
+              }
+           }
+        
+        if (typ == 'T')
+        {
+
+            if (zaehler == 0) {
+
+            		steine[0][0] = 0;
+            		steine[0][1] = -1;
+
+            		steine[1][0] = 1;
+            		steine[1][1] = 0;
+
+            		steine[2][0] = 0;
+            		steine[2][1] = 1;
+
+            		zaehler = 1;
+                  }
+            else if (zaehler == 1) {
+                     
+            		steine[0][0] = 1;
+                    steine[0][1] = 0;   
+                   
+                    steine[1][0] = 0;
+                    steine[1][1] = 1;
+                   
+                    steine[2][0] = 0;
+                    steine[2][1] = 1;
+
+                    zaehler = 2;
+                  }
+            else if (zaehler == 2) {
+                 
+                    steine[0][0] = 0;
+                    steine[0][1] = 1;   
+               
+                    steine[1][0] = -1;
+                    steine[1][1] = 0;
+               
+                    steine[2][0] = 0;
+                    steine[2][1] = -1;
+
+                    zaehler = 3;
+              }
+            else if (zaehler == 3) {
+                 
+            		steine[0][0] = -1;
+            		steine[0][1] = 0;   
+               
+            		steine[1][0] = 0;
+            		steine[1][1] = -1;
+   
+            		steine[2][0] = 1;
+            		steine[2][1] = 0;
+
+            		zaehler = 0;
+              }
+           }  
+    }﻿
 	
 	public void links() {
 		xS--;
