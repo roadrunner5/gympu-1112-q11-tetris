@@ -296,7 +296,7 @@ public class Block {
                     steine[2][0] = -2;
                     steine[2][1] = 0;
                     
-                    xS--;
+                    xS++;
 
                     zaehler = 2;
                   }
@@ -311,7 +311,7 @@ public class Block {
                     steine[2][0] = 0;
                     steine[2][1] = -2;
                     
-                    xS++;
+                    xS--;
 
                     zaehler = 3;
               }
@@ -326,7 +326,7 @@ public class Block {
             		steine[2][0] = 2;
             		steine[2][1] = 0;
             		
-            		xS++;
+            		xS--;
 
             		zaehler = 0;
               }
