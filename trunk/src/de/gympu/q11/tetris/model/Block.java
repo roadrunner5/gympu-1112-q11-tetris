@@ -340,8 +340,8 @@ public class Block {
                     steine[1][0] = 0;
                     steine[1][1] = 1;
                    
-                    steine[2][0] = 0;
-                    steine[2][1] = 1;
+                    steine[2][0] = -1;
+                    steine[2][1] = 0;
 
                     zaehler = 2;
                   }
