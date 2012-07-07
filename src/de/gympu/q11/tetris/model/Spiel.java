@@ -22,7 +22,7 @@ public class Spiel {
 		feld = new Spielfeld();
 		aktuellerBlock = randNextBlock();
 		naechsterBlock = randNextBlock();
-	}
+	} 
 
 	public Spielfeld getFeld() {
 		return feld;
