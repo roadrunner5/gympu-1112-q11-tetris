@@ -159,15 +159,15 @@ public class Block {
             else if (zaehler == 1) {
                      
                       steine[0][0] = -1;
-                    steine[0][1] = 0;   
+                      steine[0][1] = 0;   
                    
-                    steine[1][0] = 0;
-                    steine[1][1] = 1;
+                      steine[1][0] = 0;
+                      steine[1][1] = 1;
                    
-                    steine[2][0] = 1;
-                    steine[2][1] = 1;
+                      steine[2][0] = 1;
+                      steine[2][1] = 1;
 
-                    zaehler = 0;
+                      zaehler = 0;
                   }
            }
        
@@ -215,6 +215,8 @@ public class Block {
 
             		steine[2][0] = 0;
             		steine[2][1] = -2;
+            		
+            		xS--;
 
             		zaehler = 1;
                   }
@@ -228,6 +230,8 @@ public class Block {
                    
                     steine[2][0] = 2;
                     steine[2][1] = 0;
+                    
+                    xS--;
 
                     zaehler = 2;
                   }
@@ -241,6 +245,8 @@ public class Block {
                
                     steine[2][0] = 0;
                     steine[2][1] = 2;
+                    
+                    xS++;
 
                     zaehler = 3;
               }
@@ -254,6 +260,8 @@ public class Block {
    
             		steine[2][0] = -2;
             		steine[2][1] = 0;
+            		
+            		xS++;
 
             		zaehler = 0;
               }
@@ -272,6 +280,8 @@ public class Block {
 
             		steine[2][0] = 0;
             		steine[2][1] = 2;
+            		
+            		xS++;
 
             		zaehler = 1;
                   }
@@ -285,6 +295,8 @@ public class Block {
                    
                     steine[2][0] = -2;
                     steine[2][1] = 0;
+                    
+                    xS--;
 
                     zaehler = 2;
                   }
@@ -298,6 +310,8 @@ public class Block {
                
                     steine[2][0] = 0;
                     steine[2][1] = -2;
+                    
+                    xS++;
 
                     zaehler = 3;
               }
@@ -311,6 +325,8 @@ public class Block {
    
             		steine[2][0] = 2;
             		steine[2][1] = 0;
+            		
+            		xS++;
 
             		zaehler = 0;
               }
