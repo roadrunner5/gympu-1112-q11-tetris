@@ -187,7 +187,7 @@ public class Block {
 
                       zaehler = 1;
                   }
-            else if (zaehler == 1) {
+            else if (zaehler == 1) { 
                      
                       steine[0][0] = 1;
                       steine[0][1] = 0;   
@@ -372,7 +372,7 @@ public class Block {
             		zaehler = 0;
               }
            }  
-    }﻿
+    }
 	
 	public void links() {
 		xS--;
