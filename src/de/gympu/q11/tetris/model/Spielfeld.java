@@ -27,10 +27,10 @@ public class Spielfeld {
 		this.view = view;
 	}
 	
-	public void reiheLoeschen(int zuLoeschendeReihe)
+	public void reiheLoeschen(int y)
 	{
 		int i;
-		for(i = zuLoeschendeReihe; i >= 0; i--)
+		for(i = y; i >= 0; i--)
 		{
 			if(i>0)
 			{
