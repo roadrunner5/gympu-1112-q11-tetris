@@ -61,8 +61,12 @@ public class TetrisGUI implements ModelZuView {
         }
         
 
-                private void update() {
-
+                private void update(int reihe, int spalte, int daten1) {
+                  
+                 
+                                   
+                                    
+                    
                 
         }
 

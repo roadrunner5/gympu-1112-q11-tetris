@@ -13,7 +13,7 @@ import de.gympu.q11.tetris.view.TetrisView;
 
 public class Zeichenpanel extends JPanel {
 	
-	private BufferedImage roterStein, Tetris;
+	private BufferedImage roterStein,blauerStein,grünerStein,gelberStein,schwarzerStein,grauerStein,orangerStein,Tetris;
 	
 	private int[][] naechsterStein;
 	
@@ -24,6 +24,12 @@ public class Zeichenpanel extends JPanel {
 		spielfeld = new int[20][10];
 		try {
 			roterStein = ImageIO.read(new File("Stein Rot.jpg"));
+			blauerStein = ImageIO.read(new File("blauerStein.jpg"));
+			grünerStein = ImageIO.read(new File("grünerStein.jpg"));
+			gelberStein = ImageIO.read(new File("gelberStein.jpg"));
+			schwarzerStein = ImageIO.read(new File("schwarzerStein.jpg"));
+			grauerStein = ImageIO.read(new File("grauerStein.jpg"));
+			orangerStein = ImageIO.read(new File("orangerStein.jpg"));
 			Tetris = ImageIO.read(new File("Tetris.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -37,6 +43,7 @@ public class Zeichenpanel extends JPanel {
 		
 		// Hintergrund zeichnen
 		g.drawImage(Tetris, 0, 0, null);
+		
 		update();
 		// Nächsten Stein zeichen
 		
@@ -49,9 +56,30 @@ public class Zeichenpanel extends JPanel {
 		for(int i = 0; i < spielfeld.length; i++) {
 			for(int o = 0; o < spielfeld[i].length; o++) {
 			//	System.out.println(spielfeld[i][o]);
-				if(spielfeld[i][o] != 0) {
-					g.drawImage(roterStein, x, y, null);
-				}
+				if(spielfeld[i][o] == 1) {g.drawImage(roterStein, x, y, null);}
+				else	
+					{if(spielfeld[i][o] == 2) {g.drawImage(blauerStein, x, y, null);}
+							
+				else	
+					{if(spielfeld[i][o] == 3) {g.drawImage(grünerStein, x, y, null);}
+						
+				else	
+					{if(spielfeld[i][o] == 4) {g.drawImage(gelberStein, x, y, null);}
+
+				else	
+					{if(spielfeld[i][o] == 5) {g.drawImage(schwarzerStein, x, y, null);}
+							
+				else	
+					{if(spielfeld[i][o] == 6) {g.drawImage(grauerStein, x, y, null);}
+						
+				else	
+					{if(spielfeld[i][o] == 7) {g.drawImage(orangerStein, x, y, null);}
+								
+			
+								
+							
+							
+				}}}}}}
 				x += 40;
 			}
 			y += 40;
@@ -68,16 +96,12 @@ public class Zeichenpanel extends JPanel {
 	
 	
 	private void update() {
-        String textSpielfeld = "";
-        for(int i = 0; i < spielfeld.length; i++) {
-                for(int q = 0; q < spielfeld[i].length; q++) {
-                        if(spielfeld[i][q] == 0) textSpielfeld = textSpielfeld + " ";
-                        else textSpielfeld = textSpielfeld + spielfeld[i][q];
-                }
-                textSpielfeld += "\n";
+      
+		
+		
         }
        
         
 }
 	
-}
+
