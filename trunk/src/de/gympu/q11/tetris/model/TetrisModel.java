@@ -3,7 +3,7 @@ package de.gympu.q11.tetris.model;
 import de.gympu.q11.tetris.view.ModelZuView;
 import de.gympu.q11.tetris.view.TetrisView;
 
-public class TetrisModel implements ControllerZuModel {
+public class TetrisModel implements ControllerZuModel, ViewZuModel {
 
 	private Spiel spiel = new Spiel();
 	private ModelZuView view;
@@ -53,7 +53,7 @@ public class TetrisModel implements ControllerZuModel {
 		spiel.update(-1);
 	}
 	
-	public void setView(TetrisView view) {
+	public void setView(ModelZuView view) {
 		this.view = view;
 		this.spiel.setView(view);
 	}
