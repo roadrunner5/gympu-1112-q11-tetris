@@ -153,7 +153,7 @@ public class TetrisController implements ViewZuController {
 	
 	public void PunkteZaehler()
 	{
-		
+		model.setPunkte(model.getPunkte()+1000);
 	}
 	
 	
