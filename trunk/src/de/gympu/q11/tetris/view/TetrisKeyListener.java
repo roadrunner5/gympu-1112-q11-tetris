@@ -17,34 +17,34 @@ public class TetrisKeyListener implements KeyListener {
                 int code = arg0.getKeyCode();
                 
                 if(code == KeyEvent.VK_LEFT) {
-                        System.out.println("links");
+                       // System.out.println("links");
                         this.controler.links();
                 }
                 
                 if(code == KeyEvent.VK_RIGHT) {
-                        System.out.println("rechts");
+                       // System.out.println("rechts");
                         this.controler.rechts();
                 }
                 
 
 		if(code == KeyEvent.VK_DOWN) {
-			System.out.println("unten");
+			//System.out.println("unten");
 			this.controler.unten();
 		}		
 		
 		if(code == KeyEvent.VK_SPACE){
-			System.out.println("drehen");
+			//System.out.println("drehen");
 			this.controler.uhrzeigerSinnDrehen();
 			
 		}
 			
 		if(code == KeyEvent.VK_S) {
-			System.out.println("absetzen");
+			//System.out.println("absetzen");
 			this.controler.absetzen();
 		}
 		
 		if(code == KeyEvent.VK_P) {
-			System.out.println("pause");
+			//System.out.println("pause");
 			this.controler.pause();
 		}	
 	}
