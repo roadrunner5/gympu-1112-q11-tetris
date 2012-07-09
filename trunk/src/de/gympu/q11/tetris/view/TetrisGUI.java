@@ -52,13 +52,9 @@ public class TetrisGUI  {
         public void updateReihe(int reihenNummer, int[] daten) {
                 this.daten[reihenNummer] = daten;
                 zeichenPanel.updateReihe(reihenNummer, daten);
-                zeichenPanel.repaint();
+                zeichenPanel.repaint(30+reihenNummer*35,50,35,350);
         }
         
-
-		public int[][] getDaten() {
-			return daten;
-		}
 
 		private void update() {
 
