@@ -21,11 +21,11 @@ public class Testklasse extends JFrame {
 		daten = new int[20][8];
 			
 			
-		this.setResizable(false);
-		this.setUndecorated(true);
+//		this.setResizable(false);
+//		this.setUndecorated(true);
 
 
-		Zeichenpanel z = new Zeichenpanel(new File("Tetris.jpg"));
+		de.gympu.q11.tetris.view.Zeichenpanel z = new de.gympu.q11.tetris.view.Zeichenpanel();
 
 	
 		this.getContentPane().add(z);
@@ -33,25 +33,7 @@ public class Testklasse extends JFrame {
 		this.setLocation(100, 100);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		//
-
-        
-
-
-
-		{
-		try {
-			Thread.sleep(2000);
-			z.datei = new File("Stein Rot.jpg");
-			z.repaint(0, 0, 50, 50);
-
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-
-			e.printStackTrace();
-		}
-		}}
+	}
 		
 		
 		
