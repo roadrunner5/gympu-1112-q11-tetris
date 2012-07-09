@@ -50,7 +50,7 @@ public class TetrisController implements ViewZuController {
 		
 		if(iSchwerpunkt[0]+iSteine[0][0]<9 && iSchwerpunkt[0]+iSteine[1][0]<9 && iSchwerpunkt[0]+iSteine[2][0]<9 && iSchwerpunkt[0]<9 && iSteine[iSchwerpunkt[1]+iSteine[0][1]][iSchwerpunkt[0]+iSteine[0][0]]==0 && iSteine[iSchwerpunkt[1]+iSteine[1][1]][iSchwerpunkt[0]+iSteine[1][0]]==0 && iSteine[iSchwerpunkt[1]+iSteine[2][1]][iSchwerpunkt[0]+iSteine[2][0]]==0 && iSteine[iSchwerpunkt[1]][iSchwerpunkt[0]]==0)
 		{
-			this.uhrzeigerSinnDrehen();
+			model.steinImUhrzeigerSinnDrehen();
 		}
 	}
 	
