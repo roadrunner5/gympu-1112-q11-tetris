@@ -80,12 +80,14 @@ public class TetrisView  {
                 update();
         }
         
+        
 
 		public int[][] getDaten() {
 			return daten;
 		}
 
 		private void update() {
+			
                 String textSpielfeld = "";
                 for(int i = 0; i < daten.length; i++) {
                         for(int q = 0; q < daten[i].length; q++) {
@@ -95,7 +97,6 @@ public class TetrisView  {
                         textSpielfeld += "\n";
                 }
                 spiel.setText(textSpielfeld);
-                
         }
 
 		public void setNextStein(int[][] stein) {
