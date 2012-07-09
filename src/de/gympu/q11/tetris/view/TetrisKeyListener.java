@@ -32,13 +32,13 @@ public class TetrisKeyListener implements KeyListener {
 			this.controler.unten();
 		}		
 		
-		if(code == KeyEvent.VK_UP){
+		if(code == KeyEvent.VK_SPACE){
 			System.out.println("drehen");
 			this.controler.gegenUhrzeigerSinnDrehen();
 			
 		}
 			
-		if(code == KeyEvent.VK_SPACE) {
+		if(code == KeyEvent.VK_S) {
 			System.out.println("absetzen");
 			this.controler.absetzen();
 		}
