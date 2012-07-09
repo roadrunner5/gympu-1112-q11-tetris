@@ -34,7 +34,7 @@ public class TetrisKeyListener implements KeyListener {
 		
 		if(code == KeyEvent.VK_SPACE){
 			System.out.println("drehen");
-			this.controler.gegenUhrzeigerSinnDrehen();
+			this.controler.uhrzeigerSinnDrehen();
 			
 		}
 			

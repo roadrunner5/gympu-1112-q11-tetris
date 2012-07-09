@@ -44,11 +44,12 @@ public class TetrisController implements ViewZuController {
 	}
 
 	public void uhrzeigerSinnDrehen() {
+		this.model.steinImUhrzeigerSinnDrehen();
 	}
 	
 	public void gegenUhrzeigerSinnDrehen() {
-		//steinGegenUhrzeigerSinnDrehen
-		this.model.steinImUhrzeigerSinnDrehen();
+
+		
 	}
 
 	public void pause() {
@@ -116,6 +117,7 @@ public class TetrisController implements ViewZuController {
 			ReiheLoeschen();
 			
 		}
+		PunkteZaehler();
 	}
 
 	public void starten() {
