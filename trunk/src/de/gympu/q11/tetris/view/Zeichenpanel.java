@@ -34,9 +34,10 @@ public class Zeichenpanel extends JPanel {
 
 	public void paint(Graphics g) {
 		
+		
 		// Hintergrund zeichnen
 		g.drawImage(Tetris, 0, 0, null);
-		
+		update();
 		// Nächsten Stein zeichen
 		
 		// Gehaltenen Stein zeichnen
