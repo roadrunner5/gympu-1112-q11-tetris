@@ -14,7 +14,7 @@ public class Block {
 		steine = new int[3][2];
 		zaehler = 0;
 		
-		// Steine Array auffüllen
+		// Steine Array auffuellen
 		// je nach Typ
 		
 		switch(art) {
