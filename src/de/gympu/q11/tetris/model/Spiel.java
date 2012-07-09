@@ -5,6 +5,7 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 import de.gympu.q11.tetris.starter.GymPuTetris;
+import de.gympu.q11.tetris.view.ModelZuView;
 import de.gympu.q11.tetris.view.TetrisView;
 
 public class Spiel {
@@ -16,7 +17,7 @@ public class Spiel {
 	private int level;
 	private String spielerName;
 	
-	private TetrisView view;
+	private ModelZuView view;
 	
 	public Spiel() {
 		feld = new Spielfeld();
@@ -108,7 +109,7 @@ public class Spiel {
 		}
 	}
 
-	public void setView(TetrisView view) {
+	public void setView(ModelZuView view) {
 		this.view = view;
 		this.feld.setView(view);
 		naechstenSteinAnViewSenden();
