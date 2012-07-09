@@ -104,8 +104,7 @@ public class Block {
 		}
 		
 	}
-	
-	
+
 
     public void drehenUhrzeigersinn() {
         
