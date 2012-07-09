@@ -66,6 +66,7 @@ public class TetrisModel implements ControllerZuModel {
 	public void reiheLoeschen(int y)
 	{
 		spiel.getFeld().reiheLoeschenSpielfeld(y);
+		spiel.update(-1);
 	}
 
 	public void setPunkte(int punkte)
