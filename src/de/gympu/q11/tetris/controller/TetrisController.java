@@ -142,8 +142,17 @@ public class TetrisController implements ViewZuController {
 				}
 				else loeschen=true;
 			}
-			if(loeschen==true) model.reiheLoeschen(y);
+			if(loeschen==true) 
+				{
+				model.reiheLoeschen(y);
+				System.out.println("Loeschen"+y);
+				}
 		}
+	}
+	
+	public void PunkteZaehler
+	{
+		
 	}
 	
 	
