@@ -113,6 +113,7 @@ public class TetrisController implements ViewZuController {
 		{
 			aufgeloest=true;
 			model.figurAufloesen();
+			ReiheLoeschen();
 			
 		}
 	}
