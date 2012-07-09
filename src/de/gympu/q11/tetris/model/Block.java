@@ -127,7 +127,7 @@ public class Block {
                   }
             else if (zaehler == 1) {
                      
-                      steine[0][0] = 1;
+                    steine[0][0] = 1;
                     steine[0][1] = 0;   
                    
                     steine[1][0] = 0;

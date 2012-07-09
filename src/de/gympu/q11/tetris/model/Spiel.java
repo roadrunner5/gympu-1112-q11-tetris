@@ -166,4 +166,12 @@ public class Spiel {
 	public void setSpielerName(String spielerName) {
 		this.spielerName = spielerName;
 	}
+
+	public int getPunkteSpiel() {
+		return punkte;
+	}
+
+	public void setPunkteSpiel(int punkte) {
+		this.punkte = punkte;
+	}
 }
