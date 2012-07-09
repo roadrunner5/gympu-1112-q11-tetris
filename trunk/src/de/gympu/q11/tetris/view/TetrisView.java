@@ -99,30 +99,30 @@ public class TetrisView implements ModelZuView {
                 spiel.setText(textSpielfeld);
         }
 
-                public void setNextStein(int[][] stein) {
-                // Nextstein in 1,2,3,4
-                String[] next = this.nextStein.getText().split("\n");
-                for(int i = 1; i < 5; i++) {
-                        String line = "";
-                        for(int l = 0; l < stein[i-1].length; l++) {
-                                line += stein[i-1][l];
-                        }
-                        // line += "\n";
-                        next[i] = line;
+        public void setNextStein(int[][] stein) {
+        	// Nextstein in 1,2,3,4
+        	String[] next = this.nextStein.getText().split("\n");
+        	for(int i = 1; i < 5; i++) {
+        		String line = "";
+                for(int l = 0; l < stein[i-1].length; l++) {
+                    	line += stein[i-1][l];
                 }
+            // line += "\n";
+            next[i] = line;
+            }
                 
-                String right = "";
-                for(int i = 0; i < next.length; i++) {
-                        right += next[i] + "\n";
-                }
+        	String right = "";
+        	for(int i = 0; i < next.length; i++) {
+                right += next[i] + "\n";
+        	}
                 
-                right = right.replaceAll("0", " ");
+        	right = right.replaceAll("0", " ");
                 
-                this.nextStein.setText(right);          
+        	this.nextStein.setText(right);          
         }
         
         public void setGehaltenerStein(int[][] stein) {
-                // Nextstein in 6,7,8,9
+                // Next Stein in 6,7,8,9
                 String[] next = this.nextStein.getText().split("\n");
                 for(int i = 6; i < 10; i++) {
                         String line = "";
