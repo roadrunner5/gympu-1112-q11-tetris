@@ -22,7 +22,7 @@ public class TetrisKeyListener implements KeyListener {
                 }
                 
                 if(code == KeyEvent.VK_RIGHT) {
-                       // System.out.println("rechts");
+                        //System.out.println("rechts");
                         this.controler.rechts();
                 }
                 

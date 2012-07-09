@@ -61,12 +61,12 @@ public class TetrisGUI implements ModelZuView {
         }
         
 
-		private void update() {
+                private void update() {
 
                 
         }
 
-		public void setNextStein(int[][] stein) {
+                public void setNextStein(int[][] stein) {
                  
         }
         
@@ -74,13 +74,14 @@ public class TetrisGUI implements ModelZuView {
                       
         }
 
-		@Override
-		public void setPunkte(int punkte) {
-			// TODO Auto-generated method stub
-			
-		}
+                @Override
+                public void setPunkte(int punkte) {
+                        // TODO Auto-generated method stub
+                        
+                }
         
 
 
 }
+
 
