@@ -150,7 +150,7 @@ public class TetrisController implements ViewZuController {
 		}
 	}
 	
-	public void PunkteZaehler
+	public void PunkteZaehler()
 	{
 		
 	}
