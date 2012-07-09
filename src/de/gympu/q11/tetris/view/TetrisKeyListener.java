@@ -47,6 +47,8 @@ public class TetrisKeyListener implements KeyListener {
 			//System.out.println("pause");
 			this.controler.pause();
 		}	
+		
+	
 	}
 
 
