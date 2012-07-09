@@ -29,6 +29,7 @@ public class TetrisModel implements ControllerZuModel {
 	
 	public void steinImUhrzeigerSinnDrehen() {
 		this.spiel.getAktuellerBlock().drehenUhrzeigersinn();
+		spiel.update(-1);
 	}
 
 	public void figurAufloesen() {
