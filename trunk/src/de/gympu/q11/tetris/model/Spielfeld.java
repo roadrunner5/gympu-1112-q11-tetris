@@ -7,7 +7,7 @@ public class Spielfeld {
 	private TetrisView view;
 	
 	public Spielfeld() {
-		feld = new int[20][10];
+		feld = new int[18][10];
 	}
 
 	public int[][] getFeld() {
