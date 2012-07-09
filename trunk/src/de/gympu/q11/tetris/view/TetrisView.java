@@ -75,13 +75,17 @@ public class TetrisView  {
                
         }
         
-        
         public void updateReihe(int reihenNummer, int[] daten) {
                 this.daten[reihenNummer] = daten;
                 update();
         }
         
-        private void update() {
+
+		public int[][] getDaten() {
+			return daten;
+		}
+
+		private void update() {
                 String textSpielfeld = "";
                 for(int i = 0; i < daten.length; i++) {
                         for(int q = 0; q < daten[i].length; q++) {
@@ -91,9 +95,10 @@ public class TetrisView  {
                         textSpielfeld += "\n";
                 }
                 spiel.setText(textSpielfeld);
+                
         }
-        
-        public void setNextStein(int[][] stein) {
+
+		public void setNextStein(int[][] stein) {
                 // Nextstein in 1,2,3,4
                 String[] next = this.nextStein.getText().split("\n");
                 for(int i = 1; i < 5; i++) {
