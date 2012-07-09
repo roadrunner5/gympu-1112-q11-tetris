@@ -26,5 +26,21 @@ public class Spielfeld {
 	public void setView(TetrisView view) {
 		this.view = view;
 	}
+	
+	public void reiheLoeschen(int zuLoeschendeReihe)
+	{
+		int i;
+		for(i = zuLoeschendeReihe; i >= 0; i--)
+		{
+			if(i>0)
+			{
+			feld[i] = feld[i-1];
+			}
+			else
+			{
+				feld[0]= new int[10];
+			}
+		}
+	}
 
 }
