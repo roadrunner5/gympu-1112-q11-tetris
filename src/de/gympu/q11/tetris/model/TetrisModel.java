@@ -40,11 +40,6 @@ public class TetrisModel implements ControllerZuModel {
 		spiel.getAktuellerBlock().schrittNachUnten();
 		spiel.update(-1);
 	}
-
-	public void reiheLoeschen(int nummer) {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	public void links() {
 		spiel.aktuellerSteinLinks();
@@ -61,7 +56,7 @@ public class TetrisModel implements ControllerZuModel {
 		spiel.update(-1);
 	}
 	
-	public void reiheLoeschen1(int y)
+	public void reiheLoeschen(int y)
 	{
 		spiel.getFeld().reiheLoeschenSpielfeld(y);
 	}
