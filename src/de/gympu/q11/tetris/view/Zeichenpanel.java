@@ -30,7 +30,6 @@ public class Zeichenpanel extends JPanel {
 			e.printStackTrace();
 		}
 		
-		spielfeld[1][6] = 1;
 	}
 
 	public void paint(Graphics g) {
