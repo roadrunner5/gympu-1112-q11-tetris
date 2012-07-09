@@ -44,8 +44,7 @@ public class TetrisController implements ViewZuController {
 	}
 
 	
-	public void pruefenUhrzeigerSinn()
-	{
+	public void uhrzeigerSinnDrehen() {
 		int [][] iSteine=model.iDrehenUhrzeigersinn();
 		int [] iSchwerpunkt=model.iDrehenUhrzeigersinnSchwerpunkt();
 		
@@ -53,10 +52,6 @@ public class TetrisController implements ViewZuController {
 		{
 			this.uhrzeigerSinnDrehen();
 		}
-	}
-	
-	public void uhrzeigerSinnDrehen() {
-		this.model.steinImUhrzeigerSinnDrehen();
 	}
 	
 	public void gegenUhrzeigerSinnDrehen() {
