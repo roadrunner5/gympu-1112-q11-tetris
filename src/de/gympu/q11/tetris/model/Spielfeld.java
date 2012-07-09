@@ -27,7 +27,7 @@ public class Spielfeld {
 		this.view = view;
 	}
 	
-	public void reiheLoeschen(int y)
+	public void reiheLoeschenSpielfeld(int y)
 	{
 		int i;
 		for(i = y; i >= 0; i--)

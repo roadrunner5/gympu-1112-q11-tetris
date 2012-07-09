@@ -59,6 +59,11 @@ public class TetrisModel implements ControllerZuModel {
 		spiel.aktuellerSteinRechts();
 		spiel.update(-1);
 	}
+	
+	public void reiheLoeschen1(int y)
+	{
+		spiel.getFeld().reiheLoeschenSpielfeld(y);
+	}
 
 
 
