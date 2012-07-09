@@ -17,7 +17,7 @@ import Testpackage.Zeichenpanel;
 
 import de.gympu.q11.tetris.controller.TetrisController;
 
-public class TetrisView  {
+public class TetrisView implements ModelZuView {
         
         private JFrame fenster;
         private JTextArea spiel;
@@ -141,6 +141,11 @@ public class TetrisView  {
                 
                 this.nextStein.setText(right);          
         }
+
+		public void setPunkte(int punkte) {
+			// TODO Auto-generated method stub
+			
+		}
         
 
 
