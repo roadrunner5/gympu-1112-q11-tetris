@@ -158,7 +158,12 @@ public class Spiel {
 		}
 		
 	}
-	
 
+	public String getSpielerName() {
+		return spielerName;
+	}
 
+	public void setSpielerName(String spielerName) {
+		this.spielerName = spielerName;
+	}
 }
