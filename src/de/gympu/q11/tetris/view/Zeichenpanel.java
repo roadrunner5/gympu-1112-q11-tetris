@@ -9,9 +9,11 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
+import de.gympu.q11.tetris.view.TetrisView;
+
 public class Zeichenpanel extends JPanel {
 	
-	private BufferedImage roterStein;
+	private BufferedImage roterStein, Tetris;
 	
 	private int[][] naechsterStein;
 	
@@ -22,31 +24,31 @@ public class Zeichenpanel extends JPanel {
 		spielfeld = new int[20][10];
 		try {
 			roterStein = ImageIO.read(new File("Stein Rot.jpg"));
+			Tetris = ImageIO.read(new File("Tetris.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		spielfeld[0][5] = 1;
-		spielfeld[2][4] = 1;
+		spielfeld[1][6] = 1;
 	}
-	
-	
+
 	public void paint(Graphics g) {
+		
 		// Hintergrund zeichnen
+		g.drawImage(Tetris, 0, 0, null);
 		
 		// Nächsten Stein zeichen
 		
 		// Gehaltenen Stein zeichnen
 		
 		// Spielfeld zeichnen
-		
 		int x = 0;
 		int y = 0;
 		
 		for(int i = 0; i < spielfeld.length; i++) {
 			for(int o = 0; o < spielfeld[i].length; o++) {
-				System.out.println(spielfeld[i][o]);
+			//	System.out.println(spielfeld[i][o]);
 				if(spielfeld[i][o] != 0) {
 					g.drawImage(roterStein, x, y, null);
 				}
@@ -56,11 +58,26 @@ public class Zeichenpanel extends JPanel {
 			x = 0;
 		}
 		
-
+		
 	}
 	
 	public void updateReihe(int reihe, int[] data) {
 		spielfeld[reihe] = data;
 	}
-
+	
+	
+	
+	private void update() {
+        String textSpielfeld = "";
+        for(int i = 0; i < spielfeld.length; i++) {
+                for(int q = 0; q < spielfeld[i].length; q++) {
+                        if(spielfeld[i][q] == 0) textSpielfeld = textSpielfeld + " ";
+                        else textSpielfeld = textSpielfeld + spielfeld[i][q];
+                }
+                textSpielfeld += "\n";
+        }
+       
+        
+}
+	
 }

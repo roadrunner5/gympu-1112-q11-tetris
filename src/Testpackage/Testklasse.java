@@ -59,6 +59,7 @@ public class Testklasse extends JFrame {
                     textSpielfeld += "\n";
             }
             spiel.setText(textSpielfeld);
+            
     }
     
     public void setNextStein(int[][] stein) {
