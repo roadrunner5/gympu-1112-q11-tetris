@@ -133,13 +133,14 @@ public class TetrisController implements ViewZuController {
 		boolean loeschen = false;
 
 		for(int y=0; y<20; y++){
+			loeschen = false;
 			for(int x=0; x<10; x++){
-				if(feld[y][x] != 0) 
+				if(feld[y][x] == 0) 
 				{
-					if(loeschen==true) loeschen=true;
-					//else loeschen=false;
+					loeschen = false;
+					break;
 				}
-				else loeschen=false;
+				else loeschen=true;
 			}
 			if(loeschen==true) model.reiheLoeschen(y);
 		}
