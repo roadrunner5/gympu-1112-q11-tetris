@@ -49,7 +49,7 @@ public class TetrisController implements ViewZuController {
 		int [] iSchwerpunkt=model.iDrehenUhrzeigersinnSchwerpunkt();
 		int[][] feld= model.spielfeldLesen();
 		
-		if(iSchwerpunkt[0]+iSteine[0][0]<9 && iSchwerpunkt[0]+iSteine[1][0]<9 && iSchwerpunkt[0]+iSteine[2][0]<9 && iSchwerpunkt[0]<9 && feld[iSchwerpunkt[1]+iSteine[0][1]][iSchwerpunkt[0]+iSteine[0][0]]==0 && feld[iSchwerpunkt[1]+iSteine[1][1]][iSchwerpunkt[0]+iSteine[1][0]]==0 && feld[iSchwerpunkt[1]+iSteine[2][1]][iSchwerpunkt[0]+iSteine[2][0]]==0 && feld[iSchwerpunkt[1]][iSchwerpunkt[0]]==0)
+		if(iSchwerpunkt[0]+iSteine[0][0]<=9 && iSchwerpunkt[0]+iSteine[1][0]<=9 && iSchwerpunkt[0]+iSteine[2][0]<=9 && iSchwerpunkt[0]<=9 && feld[iSchwerpunkt[1]+iSteine[0][1]][iSchwerpunkt[0]+iSteine[0][0]]==0 && feld[iSchwerpunkt[1]+iSteine[1][1]][iSchwerpunkt[0]+iSteine[1][0]]==0 && feld[iSchwerpunkt[1]+iSteine[2][1]][iSchwerpunkt[0]+iSteine[2][0]]==0 && feld[iSchwerpunkt[1]][iSchwerpunkt[0]]==0)
 		{
 			model.steinImUhrzeigerSinnDrehen();
 		}
