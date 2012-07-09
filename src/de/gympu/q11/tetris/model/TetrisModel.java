@@ -1,11 +1,12 @@
 package de.gympu.q11.tetris.model;
 
+import de.gympu.q11.tetris.view.ModelZuView;
 import de.gympu.q11.tetris.view.TetrisView;
 
 public class TetrisModel implements ControllerZuModel {
 
 	private Spiel spiel = new Spiel();
-	private TetrisView view;
+	private ModelZuView view;
 	
 	private int[][] iSteine;
 	private int iZaehler;

@@ -15,7 +15,7 @@ import org.w3c.dom.stylesheets.LinkStyle;
 
 import de.gympu.q11.tetris.controller.TetrisController;
 
-public class TetrisGUI  {
+public class TetrisGUI implements ModelZuView {
         
         private JFrame fenster;
         private Zeichenpanel zeichenPanel;
@@ -69,6 +69,12 @@ public class TetrisGUI  {
         public void setGehaltenerStein(int[][] stein) {
                       
         }
+
+		@Override
+		public void setPunkte(int punkte) {
+			// TODO Auto-generated method stub
+			
+		}
         
 
 
