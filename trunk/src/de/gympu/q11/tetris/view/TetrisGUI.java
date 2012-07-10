@@ -29,7 +29,7 @@ public class TetrisGUI implements ModelZuView {
                 zeichenPanel = new Zeichenpanel();
                 
                 fenster = new JFrame();
-                fenster.setSize(800, 700);
+                fenster.setSize(602, 700);
                 fenster.setResizable(false);
                 fenster.setLocation(200, 50);
                 fenster.getContentPane().add(zeichenPanel);
@@ -56,8 +56,8 @@ public class TetrisGUI implements ModelZuView {
         public void updateReihe(int reihenNummer, int[] daten) {
                 this.daten[reihenNummer] = daten;
                 zeichenPanel.updateReihe(reihenNummer, daten);
-                //zeichenPanel.repaint(30+reihenNummer*35,50,35,350);
-                zeichenPanel.repaint();
+                zeichenPanel.repaint(142,34+32*reihenNummer,320,32);
+                //zeichenPanel.repaint();
         }
         
 
