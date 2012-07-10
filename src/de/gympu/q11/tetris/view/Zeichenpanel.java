@@ -50,8 +50,8 @@ public class Zeichenpanel extends JPanel {
 		// Gehaltenen Stein zeichnen
 		
 		// Spielfeld zeichnen
-		int x = 0;
-		int y = 0;
+		int x = 142;
+		int y = 34;
 		
 		for(int i = 0; i < spielfeld.length; i++) {
 			for(int o = 0; o < spielfeld[i].length; o++) {
@@ -80,9 +80,9 @@ public class Zeichenpanel extends JPanel {
 							
 							
 				}}}}}}
-				x += 40;
+				x += 32;
 			}
-			y += 40;
+			y += 32;
 			x = 0;
 		}
 		
