@@ -23,14 +23,14 @@ public class Zeichenpanel extends JPanel {
 	public Zeichenpanel() {
 		spielfeld = new int[20][10];
 		try {
-			roterStein = ImageIO.read(new File("/Images/roterStein.jpg"));
-			blauerStein = ImageIO.read(new File("/Images/blauerStein.jpg"));
-			grünerStein = ImageIO.read(new File("/Images/grünerStein.jpg"));
-			gelberStein = ImageIO.read(new File("/Images/gelberStein.jpg"));
-			schwarzerStein = ImageIO.read(new File("/Images/schwarzerStein.jpg"));
-			grauerStein = ImageIO.read(new File("/Images/grauerStein.jpg"));
-			orangerStein = ImageIO.read(new File("/Images/orangerStein.jpg"));
-			Tetris = ImageIO.read(new File("/Images/Tetris.jpg"));
+			roterStein = ImageIO.read(new File("roterStein.jpg"));
+			blauerStein = ImageIO.read(new File("blauerStein.jpg"));
+			grünerStein = ImageIO.read(new File("grünerStein.jpg"));
+			gelberStein = ImageIO.read(new File("gelberStein.jpg"));
+			schwarzerStein = ImageIO.read(new File("schwarzerStein.jpg"));
+			grauerStein = ImageIO.read(new File("grauerStein.jpg"));
+			orangerStein = ImageIO.read(new File("orangerStein.jpg"));
+			Tetris = ImageIO.read(new File("Tetris.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
