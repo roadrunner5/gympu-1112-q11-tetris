@@ -95,7 +95,7 @@ public class Zeichenpanel extends JPanel {
 	
 	
 	
-	private void update() {
+	private void update(int data) {
       
 		
 		
