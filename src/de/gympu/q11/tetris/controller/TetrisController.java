@@ -50,8 +50,11 @@ public class TetrisController implements ViewZuController {
 		int[][] feld= model.spielfeldLesen();
 		
 		System.out.println("x=" + iSchwerpunkt[0] + "y="+ iSchwerpunkt[1]);
+		System.out.println("x=" + iSteine[0][0] + "y="+ iSteine[0][1]);
+		System.out.println("x=" + iSteine[1][0] + "y="+ iSteine[1][1]);
+		System.out.println("x=" + iSteine[2][0] + "y="+ iSteine[2][1]);
 		
-		if(iSchwerpunkt[1]+iSteine[0][1]<=17 && iSchwerpunkt[1]+iSteine[1][1]<=17 && iSchwerpunkt[1]+iSteine[2][1]<=17 && iSchwerpunkt[1]<=17 && iSchwerpunkt[0]+iSteine[0][0]>=0 && iSchwerpunkt[0]+iSteine[1][0]>=0 && iSchwerpunkt[0]+iSteine[2][0]>=0 && iSchwerpunkt[0]>=0 && iSchwerpunkt[0]+iSteine[0][0]<=9 && iSchwerpunkt[0]+iSteine[1][0]<=9 && iSchwerpunkt[0]+iSteine[2][0]<=9 && iSchwerpunkt[0]<=9 && feld[iSchwerpunkt[1]+iSteine[0][1]][iSchwerpunkt[0]+iSteine[0][0]]==0 && feld[iSchwerpunkt[1]+iSteine[1][1]][iSchwerpunkt[0]+iSteine[1][0]]==0 && feld[iSchwerpunkt[1]+iSteine[2][1]][iSchwerpunkt[0]+iSteine[2][0]]==0 && feld[iSchwerpunkt[1]][iSchwerpunkt[0]]==0)
+		if((iSchwerpunkt[1]+iSteine[0][1])<=17 && (iSchwerpunkt[1]+iSteine[1][1])<=17 && (iSchwerpunkt[1]+iSteine[2][1])<=17 && iSchwerpunkt[1]<=17 && (iSchwerpunkt[0]+iSteine[0][0])>=0 && (iSchwerpunkt[0]+iSteine[1][0])>=0 && (iSchwerpunkt[0]+iSteine[2][0])>=0 && iSchwerpunkt[0]>=0 && (iSchwerpunkt[0]+iSteine[0][0])<=9 && (iSchwerpunkt[0]+iSteine[1][0])<=9 && (iSchwerpunkt[0]+iSteine[2][0])<=9 && iSchwerpunkt[0]<=9 && feld[iSchwerpunkt[1]+iSteine[0][1]][iSchwerpunkt[0]+iSteine[0][0]]==0 && feld[iSchwerpunkt[1]+iSteine[1][1]][iSchwerpunkt[0]+iSteine[1][0]]==0 && feld[iSchwerpunkt[1]+iSteine[2][1]][iSchwerpunkt[0]+iSteine[2][0]]==0 && feld[iSchwerpunkt[1]][iSchwerpunkt[0]]==0)
 		{
 			
 			model.steinImUhrzeigerSinnDrehen();
