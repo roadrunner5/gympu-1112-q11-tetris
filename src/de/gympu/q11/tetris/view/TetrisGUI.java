@@ -44,7 +44,7 @@ public class TetrisGUI implements ModelZuView {
                 fenster.getContentPane().add(zeichenPanel);
                 
                 keyListener = new TetrisKeyListener(controller);
-                zeichenPanel.addKeyListener(keyListener);
+                fenster.addKeyListener(keyListener);
           
               this.controller.getModel().setView(this);       // Dem Model die View mitteilen
                this.controller.starten();
