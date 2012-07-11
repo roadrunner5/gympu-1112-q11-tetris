@@ -5,6 +5,7 @@ import java.io.File;
 import java.awt.Color;
 import java.awt.Font;
 
+import javax.swing.JButton;
 import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -22,6 +23,7 @@ public class TetrisView implements ModelZuView {
         private JFrame fenster;
         private JTextArea spiel;
         private JTextArea nextStein;
+       
         
         private int[][] daten;
         private TetrisController controller;
@@ -80,9 +82,7 @@ public class TetrisView implements ModelZuView {
         
         
 
-                public int[][] getDaten() {
-                        return daten;
-                }
+             
 
                 private void update() {
                         
