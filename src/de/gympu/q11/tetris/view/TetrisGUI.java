@@ -23,7 +23,7 @@ public class TetrisGUI implements ModelZuView {
         private int[][] daten;
         private TetrisController controller;
         private TetrisKeyListener keyListener;
-		
+                
         
         public TetrisGUI() {
                 this.controller = new TetrisController();       // Erzeugt auch ein Model
@@ -63,7 +63,7 @@ public class TetrisGUI implements ModelZuView {
                      
 
                 public void setNextStein(int[][] stein) {
-                 
+                 zeichenPanel.setNextStein(stein);
         }
         
         public void setGehaltenerStein(int[][] stein) {
@@ -79,5 +79,4 @@ public class TetrisGUI implements ModelZuView {
 
 
 }
-
 
