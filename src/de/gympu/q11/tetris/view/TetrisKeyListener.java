@@ -48,6 +48,13 @@ public class TetrisKeyListener implements KeyListener {
 			this.controler.pause();
 		}	
 		
+		if(code == KeyEvent.VK_M) {
+			//System.out.println("pause");
+			Musik m = new Musik();
+			m.play();
+	        
+		}
+		
 	
 	}
 

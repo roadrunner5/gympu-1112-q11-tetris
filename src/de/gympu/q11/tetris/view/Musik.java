@@ -32,11 +32,12 @@ public class Musik {
     }
     
     public void play() {
-        clip.start();
-        clip.loop(-1);
+        if (clip.isActive() == true) {
+        	clip.start();
+        	clip.loop(-1);
+        }
+        else clip.stop();
     }
     
-    public void stop() {
-        clip.stop();
     }
 }
