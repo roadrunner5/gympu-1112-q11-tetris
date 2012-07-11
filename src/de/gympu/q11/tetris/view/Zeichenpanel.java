@@ -82,7 +82,7 @@ public class Zeichenpanel extends JPanel {
 				x += 32;
 			}
 			y += 32;
-			x = 0;
+			x = 142;
 		}
 		
 		
