@@ -6,7 +6,6 @@ import javax.sound.sampled.*;
  
 public class Musik {
     private Clip clip;
-    private boolean status;
     
     public static void main(String[] args) {
         Musik sound = new Musik();
@@ -16,7 +15,6 @@ public class Musik {
     }
     
     public Musik() {
-    	status = false;
         try {
            
             AudioInputStream ais = AudioSystem.getAudioInputStream(new File("Tetris.wav"));
@@ -33,12 +31,10 @@ public class Musik {
         
     }
     public void play() {
-        if (status == true) {
+        if (clip.isRunning() == true) {
         	clip.stop();
-        	status = false;
         }
         else {
-        	status = true;
         	clip.start();
         	clip.loop(-1);
         }

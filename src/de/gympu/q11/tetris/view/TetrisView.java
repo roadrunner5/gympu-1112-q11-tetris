@@ -70,9 +70,7 @@ public class TetrisView implements ModelZuView {
                 this.controller.getModel().setView(this);       // Dem Model die View mitteilen
                 this.controller.starten();
                 
-                Musik m = new Musik();
-                m.play();
-               
+                keyListener.play();
         }
         
         public void updateReihe(int reihenNummer, int[] daten) {

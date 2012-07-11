@@ -57,6 +57,10 @@ public class TetrisKeyListener implements KeyListener {
 		
 	
 	}
+        
+        public void play() {
+        	m.play();
+        }
 
 
 
