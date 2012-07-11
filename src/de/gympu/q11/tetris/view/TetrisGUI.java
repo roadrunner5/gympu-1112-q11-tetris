@@ -23,13 +23,14 @@ public class TetrisGUI implements ModelZuView {
         private int[][] daten;
         private TetrisController controller;
         private TetrisKeyListener keyListener;
+        Musik m = new Musik();
         
         public TetrisGUI() {
                 this.controller = new TetrisController();       // Erzeugt auch ein Model
                 zeichenPanel = new Zeichenpanel();
                 
                 fenster = new JFrame();
-                fenster.setSize(602, 700);
+                fenster.setSize(602, 730);
                 fenster.setResizable(false);
                 fenster.setLocation(200, 50);
                 fenster.getContentPane().add(zeichenPanel);
@@ -47,8 +48,7 @@ public class TetrisGUI implements ModelZuView {
                 
               this.controller.getModel().setView(this);       // Dem Model die View mitteilen
                this.controller.starten();
-                
-                Musik m = new Musik();
+            
                 m.play();
                
         }

@@ -7,6 +7,7 @@ import de.gympu.q11.tetris.controller.TetrisController;
 
 public class TetrisKeyListener implements KeyListener {
         private TetrisController controler;
+        Musik m = new Musik();
         
         public TetrisKeyListener(TetrisController c) {
                 this.controler = c;
@@ -50,7 +51,6 @@ public class TetrisKeyListener implements KeyListener {
 		
 		if(code == KeyEvent.VK_M) {
 			//System.out.println("pause");
-			Musik m = new Musik();
 			m.play();
 	        
 		}

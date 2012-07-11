@@ -51,9 +51,9 @@ public class Zeichenpanel extends JPanel {
 				if(spielfeld[i][o] != 0) {
 					g.drawImage(roterStein, x, y, null);
 				}
-				x += 40;
+				x += 32;
 			}
-			y += 40;
+			y += 32;
 			x = 0;
 		}
 		
