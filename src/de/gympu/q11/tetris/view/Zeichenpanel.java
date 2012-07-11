@@ -44,7 +44,6 @@ public class Zeichenpanel extends JPanel {
 		// Hintergrund zeichnen
 		g.drawImage(Tetris, 0, 0, null);
 		
-		update();
 		// Nächsten Stein zeichen
 		
 		// Gehaltenen Stein zeichnen
@@ -92,14 +91,6 @@ public class Zeichenpanel extends JPanel {
 	public void updateReihe(int reihe, int[] data) {
 		spielfeld[reihe] = data;
 	}
-	
-	
-	
-	private void update(int data) {
-      
-		
-		
-        }
        
         
 }

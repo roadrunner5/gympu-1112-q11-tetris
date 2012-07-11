@@ -57,31 +57,10 @@ public class TetrisGUI implements ModelZuView {
                 this.daten[reihenNummer] = daten;
                 zeichenPanel.updateReihe(reihenNummer, daten);
                 zeichenPanel.repaint(142,34+32*reihenNummer,320,32);
-                update(reihenNummer);
                 //zeichenPanel.repaint();
         }
-        
-
-                private void update(int reihenNummer,int zahl) {
-          
-                    
-                            for(int q = 0; q < daten[reihenNummer].length; q++) {
-                                    if(daten[reihenNummer][q] == 0){
-                                    	
-                                    	zahl=0;
-                                    	
-                                    	}
-                                    else zahl=daten[reihenNummer][q];
-                            }
-              
-                    
-                   
-                 
-                                   
-                                    
-                    
-                
-        }
+                          
+                     
 
                 public void setNextStein(int[][] stein) {
                  
