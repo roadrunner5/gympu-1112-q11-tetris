@@ -55,6 +55,10 @@ public class TetrisKeyListener implements KeyListener {
 	        
 		}
 		
+		if (code == KeyEvent.VK_ESCAPE) {
+			System.exit(0);
+		}
+		
 	
 	}
         
