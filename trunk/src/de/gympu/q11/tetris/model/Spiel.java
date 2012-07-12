@@ -120,7 +120,7 @@ public class Spiel {
 		
 		stein[1][1] = naechsterBlock.getTypInt();
 		for(int i = 0; i < 3; i++) {
-			stein[naechsterBlock.getSteine()[i][0]+1][naechsterBlock.getSteine()[i][1]+1] = naechsterBlock.getTypInt();
+			stein[naechsterBlock.getSteine()[i][0]+2][naechsterBlock.getSteine()[i][1]+2] = naechsterBlock.getTypInt();
 		}
 		
 		view.setNextStein(stein);
