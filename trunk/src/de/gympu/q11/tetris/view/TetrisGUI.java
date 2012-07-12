@@ -34,8 +34,10 @@ public class TetrisGUI implements ModelZuView {
                 fenster.setResizable(false);
                 fenster.setLocation(200, 50);
                 fenster.getContentPane().add(zeichenPanel);
+                fenster.setUndecorated(true);
                 fenster.setVisible(true);
                 fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
                 
                 daten = new int[20][10];
                 
