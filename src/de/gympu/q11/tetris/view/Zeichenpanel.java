@@ -18,6 +18,7 @@ public class Zeichenpanel extends JPanel {
         private BufferedImage roterStein,blauerStein,grünerStein,gelberStein,schwarzerStein,grauerStein,orangerStein,Tetris;
        
         private int[][] naechsterStein;
+        private int [][] gehaltenerStein;
        
        
         private int[][] spielfeld;
@@ -25,6 +26,7 @@ public class Zeichenpanel extends JPanel {
         public Zeichenpanel() {
                 spielfeld = new int[20][10];
                 naechsterStein=new int[4][4];
+                gehaltenerStein=new int [4][4];
                 try {
                         roterStein = ImageIO.read(new File("Images/roterStein.jpg"));
                         blauerStein = ImageIO.read(new File("Images/blauerStein.jpg"));
@@ -118,6 +120,35 @@ public class Zeichenpanel extends JPanel {
                                     {if(naechsterStein[z][v] == 7) {g.drawImage(orangerStein,  450,200, null);}
                                                            
                                     }}}}}}}}
+                
+                
+                
+                for(int a = 0; a < gehaltenerStein.length; a++) {
+                    for(int b = 0; b < gehaltenerStein[a].length; b++) {
+                    //      System.out.println(spielfeld[i][o]);
+                            
+                    				if(gehaltenerStein[a][b] == 1) {g.drawImage(roterStein, 100,100, null);
+      
+                            	}
+                            else    
+                                    {if(gehaltenerStein[a][b] == 2) {g.drawImage(blauerStein,  100,200, null);}
+                                                   
+                            else    
+                                    {if(gehaltenerStein[a][b] == 3) {g.drawImage(grünerStein,  100,200, null);}
+                                           
+                            else    
+                                    {if(gehaltenerStein[a][b] == 4) {g.drawImage(gelberStein, 100,200, null);}
+
+                            else    
+                                    {if(gehaltenerStein[a][b] == 5) {g.drawImage(schwarzerStein, 100,200, null);}
+                                                   
+                            else    
+                                    {if(gehaltenerStein[a][b] == 6) {g.drawImage(grauerStein,  100,200 ,null);}
+                                           
+                            else    
+                                    {if(gehaltenerStein[a][b] == 7) {g.drawImage(orangerStein,  100,200, null);}
+                                                           
+                                    }}}}}}}}
                             
                             
         }
@@ -132,6 +163,11 @@ public class Zeichenpanel extends JPanel {
         	naechsterStein=stein;
         	
         }
+
+		public void setGehaltenerStein(int[][] stein1)
+		{
+			gehaltenerStein=stein1;
+		}
         
 }
 

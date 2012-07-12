@@ -47,6 +47,7 @@ public class TetrisKeyListener implements KeyListener {
 		if(code == KeyEvent.VK_P) {
 			//System.out.println("pause");
 			this.controler.pause();
+			m.play();
 		}	
 		
 		if(code == KeyEvent.VK_M) {
@@ -64,6 +65,7 @@ public class TetrisKeyListener implements KeyListener {
         
         public void play() {
         	m.play();
+        	
         }
 
 
