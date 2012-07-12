@@ -56,6 +56,7 @@ public class TetrisController implements ViewZuController {
 		
 		
 		
+		
 		if(
 				(iSchwerpunkt[1]+iSteine[0][1]) <= 17
 					&&
