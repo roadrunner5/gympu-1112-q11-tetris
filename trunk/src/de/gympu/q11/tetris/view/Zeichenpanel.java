@@ -95,7 +95,10 @@ public class Zeichenpanel extends JPanel {
                 for(int z = 0; z < naechsterStein.length; z++) {
                     for(int v = 0; v < naechsterStein[z].length; v++) {
                     //      System.out.println(spielfeld[i][o]);
-                            if(naechsterStein[z][v] == 1) {g.drawImage(roterStein, 450,200, null);}
+                            if(naechsterStein[z][v] == 1) {
+                            	g.drawImage(roterStein, 450,100, null);
+      
+                            	}
                             else    
                                     {if(naechsterStein[z][v] == 2) {g.drawImage(blauerStein,  450,200, null);}
                                                    
