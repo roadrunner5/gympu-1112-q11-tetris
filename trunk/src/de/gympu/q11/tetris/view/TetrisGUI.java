@@ -69,8 +69,10 @@ public class TetrisGUI implements ModelZuView {
                  zeichenPanel.repaint();
         }
         
-        public void setGehaltenerStein(int[][] stein) {
-                      
+        public void setGehaltenerStein(int[][] stein1)
+        {
+          zeichenPanel.setGehaltenerStein(stein1);
+          zeichenPanel.repaint();
         }
 
                 @Override
