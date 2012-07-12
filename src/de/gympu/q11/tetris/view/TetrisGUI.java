@@ -64,6 +64,7 @@ public class TetrisGUI implements ModelZuView {
 
                 public void setNextStein(int[][] stein) {
                  zeichenPanel.setNextStein(stein);
+                 zeichenPanel.repaint();
         }
         
         public void setGehaltenerStein(int[][] stein) {
