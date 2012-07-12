@@ -33,9 +33,9 @@ public class Spielfeld {
 		int i;
 		for(i = y; i >= 0; i--)
 		{
-			if(i>0)
+			if(i > 0)
 			{
-			feld[i] = feld[i-1];
+				feld[i] = feld[i-1];
 			}
 			else
 			{
