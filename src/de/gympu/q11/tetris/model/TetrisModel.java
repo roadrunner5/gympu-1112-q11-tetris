@@ -82,7 +82,7 @@ public class TetrisModel implements ControllerZuModel, ViewZuModel {
     public int[][] iDrehenUhrzeigersinn() {
 
         iTyp = spiel.getAktuellerBlock().getTyp();
-        iSteine = spiel.getAktuellerBlock().getSteine();
+        iSteine = spiel.getAktuellerBlock().getSteine().clone();
         iXS = spiel.getAktuellerBlock().getSchwerpunkt()[0];
         iYS = spiel.getAktuellerBlock().getSchwerpunkt()[1];
         
