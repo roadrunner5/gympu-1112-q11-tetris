@@ -93,7 +93,7 @@ public class Zeichenpanel extends JPanel {
                                         {if(spielfeld[i][o] == 6) {g.drawImage(grünerStein, x, y, null);} //S
                                                
                                 else    
-                                        {if(spielfeld[i][o] == 7) {g.drawImage(roterStein, x, y, null);} //Z
+                                        {if(spielfeld[i][o] == 7) {g.drawImage(lilaStein, x, y, null);} //Z
                                                                
                        
                                                                
@@ -129,7 +129,7 @@ public class Zeichenpanel extends JPanel {
                                     {if(naechsterStein[z][v] == 6) {g.drawImage(grün, 490,90 ,null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 7) {g.drawImage(rot,  490,90, null);}
+                                    {if(naechsterStein[z][v] == 7) {g.drawImage(lila,  490,90, null);}
                                                            
                                     }}}}}}}}
                 
