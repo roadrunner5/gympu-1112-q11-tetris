@@ -76,7 +76,7 @@ public class Zeichenpanel extends JPanel {
                 for(int i = 0; i < spielfeld.length; i++) {
                         for(int o = 0; o < spielfeld[i].length; o++) {
                         //      System.out.println(spielfeld[i][o]);
-                                if(spielfeld[i][o] == 1) {g.drawImage(roterStein, x, y, null);}
+                                if(spielfeld[i][o] == 1) {g.drawImage(lilaStein, x, y, null);}
                                 else    
                                         {if(spielfeld[i][o] == 2) {g.drawImage(hellblauerStein, x, y, null);} //I
                                                        
@@ -93,7 +93,7 @@ public class Zeichenpanel extends JPanel {
                                         {if(spielfeld[i][o] == 6) {g.drawImage(grünerStein, x, y, null);} //S
                                                
                                 else    
-                                        {if(spielfeld[i][o] == 7) {g.drawImage(lilaStein, x, y, null);} //Z
+                                        {if(spielfeld[i][o] == 7) {g.drawImage(roterStein, x, y, null);} //Z
                                                                
                        
                                                                
@@ -110,7 +110,7 @@ public class Zeichenpanel extends JPanel {
                     for(int v = 0; v < naechsterStein[z].length; v++) {
                     //      System.out.println(spielfeld[i][o]);
                             if(naechsterStein[z][v] == 1) {
-                            	g.drawImage(roterStein, 450,100, null);
+                            	g.drawImage(lila, 490,90, null);
       
                             	}
                             else    
@@ -129,7 +129,7 @@ public class Zeichenpanel extends JPanel {
                                     {if(naechsterStein[z][v] == 6) {g.drawImage(grün, 490,90 ,null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 7) {g.drawImage(lila,  490,90, null);}
+                                    {if(naechsterStein[z][v] == 7) {g.drawImage(rot,  490,90, null);}
                                                            
                                     }}}}}}}}
                 
@@ -139,26 +139,26 @@ public class Zeichenpanel extends JPanel {
                     for(int b = 0; b < gehaltenerStein[a].length; b++) {
                     //      System.out.println(spielfeld[i][o]);
                             
-                    				if(gehaltenerStein[a][b] == 1) {g.drawImage(roterStein, 10,10, null);
+                    				if(gehaltenerStein[a][b] == 1) {g.drawImage(lila, 10,10, null);
       
                             	}
                             else    
-                                    {if(gehaltenerStein[a][b] == 2) {g.drawImage(blauerStein,  10,10, null);}
+                                    {if(gehaltenerStein[a][b] == 2) {g.drawImage(hellblau,  10,10, null);}
                                                    
                             else    
-                                    {if(gehaltenerStein[a][b] == 3) {g.drawImage(grünerStein,  10,10, null);}
+                                    {if(gehaltenerStein[a][b] == 3) {g.drawImage(orange,  10,10, null);}
                                            
                             else    
-                                    {if(gehaltenerStein[a][b] == 4) {g.drawImage(gelberStein, 10,10, null);}
+                                    {if(gehaltenerStein[a][b] == 4) {g.drawImage(blau, 10,10, null);}
 
                             else    
-                                    {if(gehaltenerStein[a][b] == 5) {g.drawImage(lilaStein, 10,10, null);}
+                                    {if(gehaltenerStein[a][b] == 5) {g.drawImage(gelb, 10,10, null);}
                                                    
                             else    
-                                    {if(gehaltenerStein[a][b] == 6) {g.drawImage(hellblauerStein,  10,10 ,null);}
+                                    {if(gehaltenerStein[a][b] == 6) {g.drawImage(grün,  10,10 ,null);}
                                            
                             else    
-                                    {if(gehaltenerStein[a][b] == 7) {g.drawImage(orangerStein,  10,10, null);}
+                                    {if(gehaltenerStein[a][b] == 7) {g.drawImage(rot,  10,10, null);}
                                                            
                                     }}}}}}}}
                             
