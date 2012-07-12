@@ -14,8 +14,10 @@ import javax.swing.JPanel;
 import de.gympu.q11.tetris.view.TetrisView;
 
 public class Zeichenpanel extends JPanel {
-       
-        private BufferedImage roterStein,blauerStein,grünerStein,gelberStein,schwarzerStein,grauerStein,orangerStein,Tetris;
+	
+        private BufferedImage Tetris;
+        private BufferedImage roterStein,blauerStein,grünerStein,gelberStein,lilaStein,hellblauerStein,orangerStein;
+        private BufferedImage blau,gelb,grün,hellblau,lila,orange,rot;
        
         private int[][] naechsterStein;
         private int [][] gehaltenerStein;
@@ -28,14 +30,24 @@ public class Zeichenpanel extends JPanel {
                 naechsterStein=new int[4][4];
                 gehaltenerStein=new int [4][4];
                 try {
+                		Tetris = ImageIO.read(new File("Images/Tetris.jpg"));
+                		
                         roterStein = ImageIO.read(new File("Images/roterStein.jpg"));
                         blauerStein = ImageIO.read(new File("Images/blauerStein.jpg"));
                         grünerStein = ImageIO.read(new File("Images/grünerStein.jpg"));
                         gelberStein = ImageIO.read(new File("Images/gelberStein.jpg"));
-                        schwarzerStein = ImageIO.read(new File("Images/schwarzerStein.jpg"));
-                        grauerStein = ImageIO.read(new File("Images/grauerStein.jpg"));
+                        hellblauerStein = ImageIO.read(new File("Images/hellblauerStein.jpg"));
+                        lilaStein = ImageIO.read(new File("Images/lilaStein.jpg"));
                         orangerStein = ImageIO.read(new File("Images/orangerStein.jpg"));
-                        Tetris = ImageIO.read(new File("Images/Tetris.jpg"));
+                        
+                        rot = ImageIO.read(new File("Images/rot.png"));
+                        blau = ImageIO.read(new File("Images/blau.png"));
+                        grün = ImageIO.read(new File("Images/grün.png"));
+                        gelb = ImageIO.read(new File("Images/gelb.png"));
+                        hellblau = ImageIO.read(new File("Images/hellblau.png"));
+                        lila = ImageIO.read(new File("Images/lila.png"));
+                        orange = ImageIO.read(new File("Images/orange.png"));
+                        
                 } catch (IOException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
@@ -66,22 +78,22 @@ public class Zeichenpanel extends JPanel {
                         //      System.out.println(spielfeld[i][o]);
                                 if(spielfeld[i][o] == 1) {g.drawImage(roterStein, x, y, null);}
                                 else    
-                                        {if(spielfeld[i][o] == 2) {g.drawImage(blauerStein, x, y, null);}
+                                        {if(spielfeld[i][o] == 2) {g.drawImage(hellblauerStein, x, y, null);} //I
                                                        
                                 else    
-                                        {if(spielfeld[i][o] == 3) {g.drawImage(grünerStein, x, y, null);}
+                                        {if(spielfeld[i][o] == 3) {g.drawImage(orangerStein, x, y, null);} //J
                                                
                                 else    
-                                        {if(spielfeld[i][o] == 4) {g.drawImage(gelberStein, x, y, null);}
+                                        {if(spielfeld[i][o] == 4) {g.drawImage(blauerStein, x, y, null);} //L
 
                                 else    
-                                        {if(spielfeld[i][o] == 5) {g.drawImage(schwarzerStein, x, y, null);}
+                                        {if(spielfeld[i][o] == 5) {g.drawImage(gelberStein, x, y, null);} //O
                                                        
                                 else    
-                                        {if(spielfeld[i][o] == 6) {g.drawImage(grauerStein, x, y, null);}
+                                        {if(spielfeld[i][o] == 6) {g.drawImage(grünerStein, x, y, null);} //S
                                                
                                 else    
-                                        {if(spielfeld[i][o] == 7) {g.drawImage(orangerStein, x, y, null);}
+                                        {if(spielfeld[i][o] == 7) {g.drawImage(roterStein, x, y, null);} //Z
                                                                
                        
                                                                
@@ -102,22 +114,22 @@ public class Zeichenpanel extends JPanel {
       
                             	}
                             else    
-                                    {if(naechsterStein[z][v] == 2) {g.drawImage(blauerStein,  450,200, null);}
+                                    {if(naechsterStein[z][v] == 2) {g.drawImage(hellblau,  490,90, null);}
                                                    
                             else    
-                                    {if(naechsterStein[z][v] == 3) {g.drawImage(grünerStein,  450,200, null);}
+                                    {if(naechsterStein[z][v] == 3) {g.drawImage(orange,  490,90, null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 4) {g.drawImage(gelberStein, 450,200, null);}
+                                    {if(naechsterStein[z][v] == 4) {g.drawImage(blau, 490,90, null);}
 
                             else    
-                                    {if(naechsterStein[z][v] == 5) {g.drawImage(schwarzerStein, 450,200, null);}
+                                    {if(naechsterStein[z][v] == 5) {g.drawImage(gelb, 490,90, null);}
                                                    
                             else    
-                                    {if(naechsterStein[z][v] == 6) {g.drawImage(grauerStein,  450,200 ,null);}
+                                    {if(naechsterStein[z][v] == 6) {g.drawImage(grün, 490,90 ,null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 7) {g.drawImage(orangerStein,  450,200, null);}
+                                    {if(naechsterStein[z][v] == 7) {g.drawImage(rot,  490,90, null);}
                                                            
                                     }}}}}}}}
                 
@@ -127,26 +139,26 @@ public class Zeichenpanel extends JPanel {
                     for(int b = 0; b < gehaltenerStein[a].length; b++) {
                     //      System.out.println(spielfeld[i][o]);
                             
-                    				if(gehaltenerStein[a][b] == 1) {g.drawImage(roterStein, 100,100, null);
+                    				if(gehaltenerStein[a][b] == 1) {g.drawImage(roterStein, 10,10, null);
       
                             	}
                             else    
-                                    {if(gehaltenerStein[a][b] == 2) {g.drawImage(blauerStein,  100,200, null);}
+                                    {if(gehaltenerStein[a][b] == 2) {g.drawImage(blauerStein,  10,10, null);}
                                                    
                             else    
-                                    {if(gehaltenerStein[a][b] == 3) {g.drawImage(grünerStein,  100,200, null);}
+                                    {if(gehaltenerStein[a][b] == 3) {g.drawImage(grünerStein,  10,10, null);}
                                            
                             else    
-                                    {if(gehaltenerStein[a][b] == 4) {g.drawImage(gelberStein, 100,200, null);}
+                                    {if(gehaltenerStein[a][b] == 4) {g.drawImage(gelberStein, 10,10, null);}
 
                             else    
-                                    {if(gehaltenerStein[a][b] == 5) {g.drawImage(schwarzerStein, 100,200, null);}
+                                    {if(gehaltenerStein[a][b] == 5) {g.drawImage(lilaStein, 10,10, null);}
                                                    
                             else    
-                                    {if(gehaltenerStein[a][b] == 6) {g.drawImage(grauerStein,  100,200 ,null);}
+                                    {if(gehaltenerStein[a][b] == 6) {g.drawImage(hellblauerStein,  10,10 ,null);}
                                            
                             else    
-                                    {if(gehaltenerStein[a][b] == 7) {g.drawImage(orangerStein,  100,200, null);}
+                                    {if(gehaltenerStein[a][b] == 7) {g.drawImage(orangerStein,  10,10, null);}
                                                            
                                     }}}}}}}}
                             
