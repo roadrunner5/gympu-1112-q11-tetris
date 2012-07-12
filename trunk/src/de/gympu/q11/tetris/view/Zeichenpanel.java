@@ -46,14 +46,18 @@ public class Zeichenpanel extends JPanel {
                
                 // Hintergrund zeichnen
                 g.drawImage(Tetris, 0, 0, null);
+                
+             //   Image gruenKlein = grünerStein.getScaledInstance(20, -1, BufferedImage.SCALE_SMOOTH);
+              //  g.drawImage(gruenKlein, 30,30,null);
+             
                
                 // Nächsten Stein zeichen
                
                 // Gehaltenen Stein zeichnen
                
                 // Spielfeld zeichnen
-                int x = 141;
-                int y = 92;
+                int x = 142;
+                int y = 98;
                
                 for(int i = 0; i < spielfeld.length; i++) {
                         for(int o = 0; o < spielfeld[i].length; o++) {
@@ -85,30 +89,30 @@ public class Zeichenpanel extends JPanel {
                                 x += 32;
                         }
                         y += 32;
-                        x = 141;
+                        x = 142;
                 }
                
                 for(int z = 0; z < naechsterStein.length; z++) {
                     for(int v = 0; v < naechsterStein[z].length; v++) {
                     //      System.out.println(spielfeld[i][o]);
-                            if(naechsterStein[z][v] == 1) {g.drawImage(roterStein, 600,200, null);}
+                            if(naechsterStein[z][v] == 1) {g.drawImage(roterStein, 450,200, null);}
                             else    
-                                    {if(naechsterStein[z][v] == 2) {g.drawImage(blauerStein, 200,200, null);}
+                                    {if(naechsterStein[z][v] == 2) {g.drawImage(blauerStein,  450,200, null);}
                                                    
                             else    
-                                    {if(naechsterStein[z][v] == 3) {g.drawImage(grünerStein, 200,200, null);}
+                                    {if(naechsterStein[z][v] == 3) {g.drawImage(grünerStein,  450,200, null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 4) {g.drawImage(gelberStein, 200,200, null);}
+                                    {if(naechsterStein[z][v] == 4) {g.drawImage(gelberStein, 450,200, null);}
 
                             else    
-                                    {if(naechsterStein[z][v] == 5) {g.drawImage(schwarzerStein,200,200, null);}
+                                    {if(naechsterStein[z][v] == 5) {g.drawImage(schwarzerStein, 450,200, null);}
                                                    
                             else    
-                                    {if(naechsterStein[z][v] == 6) {g.drawImage(grauerStein, 200,200, null);}
+                                    {if(naechsterStein[z][v] == 6) {g.drawImage(grauerStein,  450,200 ,null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 7) {g.drawImage(orangerStein, 200,200, null);}
+                                    {if(naechsterStein[z][v] == 7) {g.drawImage(orangerStein,  450,200, null);}
                                                            
                                     }}}}}}}}
                             
