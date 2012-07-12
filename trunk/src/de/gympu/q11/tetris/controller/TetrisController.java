@@ -45,9 +45,9 @@ public class TetrisController implements ViewZuController {
 
 	
 	public void uhrzeigerSinnDrehen() {
-		int [][] iSteine=model.iDrehenUhrzeigersinn();
-		int [] iSchwerpunkt=model.iDrehenUhrzeigersinnSchwerpunkt();
-		int[][] feld= model.spielfeldLesen();
+		int [][] iSteine = model.iDrehenUhrzeigersinn();
+		int [] iSchwerpunkt = model.iDrehenUhrzeigersinnSchwerpunkt();
+		int[][] feld = model.spielfeldLesen();
 		
 		System.out.println("x=" + iSchwerpunkt[0] + "y="+ iSchwerpunkt[1]);
 		System.out.println("x=" + iSteine[0][0] + "y="+ iSteine[0][1]);
@@ -93,7 +93,7 @@ public class TetrisController implements ViewZuController {
 	}
 	
 	public void gegenUhrzeigerSinnDrehen() {
-
+		// Wird später umgesetzt
 		
 	}
 
@@ -114,8 +114,8 @@ public class TetrisController implements ViewZuController {
 	}
 
 	public void absetzen() {
-		int[][] Stein=model.aktuellerStein();
-		int[] SPunkt= model.positionSchwerpunktAktuellerStein();
+		int[][] Stein = model.aktuellerStein();
+		int[] SPunkt = model.positionSchwerpunktAktuellerStein();
 		int[][] feld= model.spielfeldLesen();
 		while(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
 		{
