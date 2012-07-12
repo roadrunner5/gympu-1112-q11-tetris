@@ -49,7 +49,7 @@ public class Zeichenpanel extends JPanel {
                         orange = ImageIO.read(new File("Images/orange.png"));
                         
                 } catch (IOException e) {
-                        // TODO Auto-generated catch block
+
                         e.printStackTrace();
                 }
                
@@ -64,10 +64,6 @@ public class Zeichenpanel extends JPanel {
              //   Image gruenKlein = grünerStein.getScaledInstance(20, -1, BufferedImage.SCALE_SMOOTH);
               //  g.drawImage(gruenKlein, 30,30,null);
              
-               
-                // Nächsten Stein zeichen
-               
-                // Gehaltenen Stein zeichnen
                
                 // Spielfeld zeichnen
                 int x = 142;
@@ -106,6 +102,7 @@ public class Zeichenpanel extends JPanel {
                         x = 142;
                 }
                
+                //nächsten Stein zeichnen
                 for(int z = 0; z < naechsterStein.length; z++) {
                     for(int v = 0; v < naechsterStein[z].length; v++) {
                     //      System.out.println(spielfeld[i][o]);
