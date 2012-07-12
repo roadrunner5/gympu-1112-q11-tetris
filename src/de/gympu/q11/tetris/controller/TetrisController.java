@@ -54,6 +54,8 @@ public class TetrisController implements ViewZuController {
 		System.out.println("x=" + iSteine[1][0] + "y="+ iSteine[1][1]);
 		System.out.println("x=" + iSteine[2][0] + "y="+ iSteine[2][1]);
 		
+		
+		
 		if(
 				(iSchwerpunkt[1]+iSteine[0][1]) <= 17
 					&&
