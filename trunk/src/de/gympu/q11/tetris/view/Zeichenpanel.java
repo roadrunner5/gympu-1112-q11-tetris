@@ -103,30 +103,33 @@ public class Zeichenpanel extends JPanel {
                 }
                
                 //nächsten Stein zeichnen
+                
+                int xnächster = 490;
+                int ynächster = 87;
                 for(int z = 0; z < naechsterStein.length; z++) {
                     for(int v = 0; v < naechsterStein[z].length; v++) {
                     //      System.out.println(spielfeld[i][o]);
                             if(naechsterStein[z][v] == 1) {
-                            	g.drawImage(lila, 490,90, null);
+                            	g.drawImage(lila, xnächster,ynächster, null);
       
                             	}
                             else    
-                                    {if(naechsterStein[z][v] == 2) {g.drawImage(hellblau,  490,90, null);}
+                                    {if(naechsterStein[z][v] == 2) {g.drawImage(hellblau,  xnächster,ynächster, null);}
                                                    
                             else    
-                                    {if(naechsterStein[z][v] == 3) {g.drawImage(orange,  490,90, null);}
+                                    {if(naechsterStein[z][v] == 3) {g.drawImage(orange,  xnächster,ynächster, null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 4) {g.drawImage(blau, 490,90, null);}
+                                    {if(naechsterStein[z][v] == 4) {g.drawImage(blau, xnächster,ynächster, null);}
 
                             else    
-                                    {if(naechsterStein[z][v] == 5) {g.drawImage(gelb, 490,90, null);}
+                                    {if(naechsterStein[z][v] == 5) {g.drawImage(gelb, xnächster,ynächster, null);}
                                                    
                             else    
-                                    {if(naechsterStein[z][v] == 6) {g.drawImage(grün, 490,90 ,null);}
+                                    {if(naechsterStein[z][v] == 6) {g.drawImage(grün, xnächster,ynächster, null);}
                                            
                             else    
-                                    {if(naechsterStein[z][v] == 7) {g.drawImage(rot,  490,90, null);}
+                                    {if(naechsterStein[z][v] == 7) {g.drawImage(rot, xnächster,ynächster, null);}
                                                            
                                     }}}}}}}}
                 

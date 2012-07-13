@@ -60,6 +60,7 @@ public class TetrisGUI implements ModelZuView {
                 zeichenPanel.updateReihe(reihenNummer, daten);
                 zeichenPanel.repaint(142,34+32*reihenNummer,320,32);
                 //zeichenPanel.repaint();
+                //als test mal komplett repainten wegen reihelöschen
         }
                           
                      
