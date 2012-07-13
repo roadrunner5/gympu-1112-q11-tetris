@@ -82,11 +82,27 @@ public class TetrisController implements ViewZuController {
 					&&
 				iSchwerpunkt[0] <= 9 
 					&& 
+				iSchwerpunkt[1] + iSteine[0][1] >0
+					&&
+				iSchwerpunkt[0] + iSteine[0][0] >0
+					&&
 				feld[iSchwerpunkt[1] + iSteine[0][1]][iSchwerpunkt[0] + iSteine[0][0]] == 0
+					&&
+				iSchwerpunkt[1] + iSteine[1][1] >0
+					&&
+				iSchwerpunkt[0] + iSteine[1][0] >0
 					&&
 				feld[iSchwerpunkt[1] + iSteine[1][1]][iSchwerpunkt[0] + iSteine[1][0]] == 0
 					&&
+				iSchwerpunkt[1] + iSteine[2][1] >0
+					&&
+				iSchwerpunkt[0] + iSteine[2][0] >0
+					&&
 				feld[iSchwerpunkt[1] + iSteine[2][1]][iSchwerpunkt[0] + iSteine[2][0]] == 0 
+					&&
+				iSchwerpunkt[1] >0
+					&&
+				iSchwerpunkt[0] >0
 					&&
 				feld[iSchwerpunkt[1]][iSchwerpunkt[0]] == 0)
 		{
@@ -120,7 +136,7 @@ public class TetrisController implements ViewZuController {
 		int[][] Stein = model.aktuellerStein();
 		int[] SPunkt = model.positionSchwerpunktAktuellerStein();
 		int[][] feld= model.spielfeldLesen();
-		while(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
+		while(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && SPunkt[0]+Stein[0][0]>0 && SPunkt[1]+Stein[0][1]+1 >0 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && SPunkt[1]+Stein[1][1]+1 >0 && SPunkt[0]+Stein[1][0] >0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && SPunkt[1]+Stein[2][1]+1>0 && SPunkt[0]+Stein[2][0] >0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && SPunkt[1]+1 >0 && SPunkt[0] >0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
 		{
 			if(aufgeloest==false) takt();
 			else break;
@@ -153,7 +169,7 @@ public class TetrisController implements ViewZuController {
 		
 		
 		
-		if(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
+		if(SPunkt[1]+Stein[0][1]<17 && SPunkt[1]+Stein[1][1]<17 && SPunkt[1]+Stein[2][1]<17 && SPunkt[1]<17 && SPunkt[0]+Stein[0][0]>0 && SPunkt[1]+Stein[0][1]+1 >0 && feld[SPunkt[1]+Stein[0][1]+1][SPunkt[0]+Stein[0][0]]==0 && SPunkt[1]+Stein[1][1]+1 >0 && SPunkt[0]+Stein[1][0] >0 && feld[SPunkt[1]+Stein[1][1]+1][SPunkt[0]+Stein[1][0]]==0 && SPunkt[1]+Stein[2][1]+1>0 && SPunkt[0]+Stein[2][0] >0 && feld[SPunkt[1]+Stein[2][1]+1][SPunkt[0]+Stein[2][0]]==0 && SPunkt[1]+1 >0 && SPunkt[0] >0 && feld[SPunkt[1]+1][SPunkt[0]]==0)
 		{
 			model.figurSchrittRunter();
 			aufgeloest=false;
